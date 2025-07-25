@@ -1,0 +1,43 @@
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #0d0d0d;
+
+  animation: moveBackground 15s linear infinite;
+
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(45deg, rgba(100, 100, 100, 0.568) 2px, transparent 2px),
+    linear-gradient(-45deg, rgba(50, 50, 50, 0.575) 3px, transparent 3px),
+    linear-gradient(20deg, rgba(50, 50, 50, 0.575) 1px, transparent 2px);
+
+    
+
+  background-size: 50px 50px, 50px 50px, 100px 100px, 120px 120px;
+
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  animation: moveBackground 2s linear infinite;
+
+  will-change: background-position;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  to {
+    background-position: 50px 0, 0 50px, 100px 100px, -120px -120px;
+  }
+}
