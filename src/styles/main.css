@@ -1,13 +1,44 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #0e1111; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: #f2f0ef;
 }
 
-/* * Navbar* */
+a{
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box; /* Essencial para o cálculo de largura/altura */
+  background-color: #090b0c; /* Cor de fundo principal de toda a página */
+}
+
+/* Aplica box-sizing a todos os elementos e remove margens/paddings padrão */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Herda o box-sizing do html */
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background-color: #464646;
+  color: #F2F0EF;
+}
+
+/* * BODY * */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  color: #f2f0ef;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* * Navbar * */
 
 #navbar {
   display: flex;
@@ -15,8 +46,9 @@
   align-items: center;
 
   padding: 10px 20px;
-  /* background-color: #232323; */
   position: sticky;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar > img > #navbar-lista-superior {
@@ -38,7 +70,9 @@
   border-radius: 14px;
   padding: 12px 25px;
   backdrop-filter: blur(2px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0px 8px 9px rgba(255, 255, 255, 0.178);
+  -webkit-box-shadow: 1px 0px 8px 5px rgba(255, 255, 255, 0.13);
+  -moz-box-shadow: 1px 0px 8px 2px rgba(255, 255, 255, 0.082);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -49,7 +83,8 @@
   font-size: 1em;
   white-space: nowrap;
   cursor: pointer;
-  
+
+  font-weight: normal;
 
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -62,10 +97,91 @@
 
 #navbar > img {
   height: auto;
+  margin-left: 4.1vh;
+  width: 100px;
+}
+
+/* * Header *  */
+#title-one {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1vh;
+  font-size: 200px;
+  margin-left: 4.1vh;
+}
+#title-two {
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  font-size: 200px;
+  margin-right: 4.1vh;
+}
+
+#value-text {
+  font-family: Arial, sans-serif;
+  color: #fcfcfc6b;
+  font-size: 25px;
+  margin-left: 10vh;
+  margin-top: 6vh;
+  font-weight: 100;
+}
+
+.font-weight {
+  font-weight: 400;
+  color: #f2f0efe0;
 }
 
 /* * Main * */
+#main-block {
+  display: flex;
+  flex-direction: column; /* CORRIGIDO: Empilha os filhos (texto, botões, navegação) verticalmente */
+  align-items: center; /* Centraliza horizontalmente os filhos do main-block */
+  justify-content: center; /* Centraliza o conteúdo verticalmente (se houver espaço extra) */
 
+  /* max-width: 800px; */
+  margin: auto; /* Centraliza o main-block horizontalmente na página */
+  padding: 40px 20px; /* Adiciona um padding interno para espaçamento, ajuste conforme necessário */
+  min-height: calc(
+    100vh - 100px
+  ); /* Garante que o main ocupe quase toda a tela, considerando o footer. Ajuste 100px para a altura do seu header/footer */
+}
 
+#apresentation-text {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 25px; 
+  color: #fcfcfc91;
+  line-height: 1.5;
+  margin-bottom: 40px; 
+  margin-top: 20px; 
+  max-width: 1100px;
+}
+
+.portfolio-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px; 
+  margin: auto; 
+  margin-top: 30vh;
+}
+
+/* E que o .nav-block (cada um dos 4 botões de navegação) tem: */
+.nav-block {
+  display: flex;
+  flex-direction: column; /* Para empilhar ícone, título e subtítulo */
+  align-items: center; /* Centraliza conteúdo interno horizontalmente */
+  justify-content: center; /* Centraliza conteúdo interno verticalmente */
+  /* ... seus outros estilos de tamanho, cor, gradiente e hover ... */
+}
 
 /* * Footer *  */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+  position: sticky;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
