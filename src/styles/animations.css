@@ -15,18 +15,15 @@
       transparent 1px
     ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(45deg, rgba(100, 100, 100, 0.568) 2px, transparent 2px),
-    linear-gradient(-45deg, rgba(50, 50, 50, 0.575) 3px, transparent 3px),
-    linear-gradient(20deg, rgba(50, 50, 50, 0.575) 1px, transparent 2px);
-
-    
+    linear-gradient(45deg, rgba(100, 100, 100, 0.664) 2px, transparent 2px),
+    linear-gradient(-45deg, rgba(50, 50, 50, 0.541) 3px, transparent 3px);
 
   background-size: 50px 50px, 50px 50px, 100px 100px, 120px 120px;
 
   background-position: 0 0;
   background-repeat: repeat;
 
-  animation: moveBackground 2s linear infinite;
+  animation: moveBackground 1.5s linear infinite;
 
   will-change: background-position;
   backface-visibility: hidden;
