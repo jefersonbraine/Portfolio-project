@@ -11,7 +11,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   background-color: #090b0c;
-  overflow: visible;
+  
 }
 
 
@@ -26,19 +26,13 @@ html {
   color: #f2f0ef;
 }
 
-main {
-  overflow: visible;
-}
 
 /* * BODY * */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  color: #f2f0ef;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow: visible;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -48,7 +42,7 @@ body::-webkit-scrollbar {
 /* * logo * */
 
 #nome-logo{
-  margin-top: 0vh;
+  width: 120px;
   margin-left: 4vh;
 }
 
@@ -61,7 +55,7 @@ body::-webkit-scrollbar {
 
 #navbar {
   position: fixed;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0; /* Estica a navbar por toda a largura */
   display: flex;
@@ -72,7 +66,7 @@ body::-webkit-scrollbar {
   font-family: Arial, Helvetica, sans-serif;
   z-index: 99999;
 
-  margin-top: 1vh;
+  margin-top: 2vh;
 
 }
 
@@ -85,8 +79,8 @@ body::-webkit-scrollbar {
 
   border-radius: 14px;
   padding: 12px 25px;
-  backdrop-filter: blur(5px);
-  background-color: #000000be;
+  backdrop-filter: blur(2px);
+  /* background-color: #00000071; */
   box-shadow: 1px 0px 8px 9px rgba(255, 255, 255, 0.178);
   -webkit-box-shadow: 1px 0px 8px 5px rgba(255, 255, 255, 0.13);
   -moz-box-shadow: 1px 0px 8px 2px rgba(255, 255, 255, 0.082);
@@ -105,8 +99,6 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   cursor: pointer;
 
-  font-weight: normal;
-
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
@@ -114,12 +106,6 @@ body::-webkit-scrollbar {
   transform: translateY(-4px);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-}
-
-#navbar img {
-  height: auto;
-  margin-left: 4.1vh;
-  width: 100px;
 }
 
 /* * Header *  */
@@ -157,14 +143,9 @@ body::-webkit-scrollbar {
 }
 
 /* * Main * */
-
-
 #main-block {
-  
-
   margin: auto;
   padding: 40px 20px;
-  
 }
 
 /* #apresentation-text {
@@ -191,17 +172,18 @@ body::-webkit-scrollbar {
 }
 
 .portfolio-navigation a {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 220px; 
   height: 190px; 
   padding: 1rem;
   border-radius: 0.75rem;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 transparent;
 
   backdrop-filter: blur(2px);
   transition: transform 0.5s ease, box-shadow 0.6s ease;
-  box-shadow: 0 0 0 transparent;
 }
 
 .portfolio-navigation a:hover {
@@ -248,26 +230,26 @@ body::-webkit-scrollbar {
 }
 /* * Primeiro botão: "Formação" * */
 .nav-block:nth-child(1) {
-  background: linear-gradient(135deg, #6b11cb60, #2574fc63);
-  filter: blur(0.3);
+  background: linear-gradient(135deg, #40077c60, #0a3e9763);
+  filter: blur(0.3px);
 }
 
 /* * Segundo botão: "Educação" * */
 .nav-block:nth-child(2) {
   background: linear-gradient(135deg, #01836d57, #02aab086);
-  filter: blur(0.3);
+  filter: blur(0.3px);
 }
 
 /* *Terceiro botão: "Projetos"* */
 .nav-block:nth-child(3) {
   background: linear-gradient(135deg, #fc4b1a50, #f7b633b0);
-  filter: blur(0.3);
+  filter: blur(0.3px);
 }
 
 /* *Quarto botão: "Sobre mim"* */
 .nav-block:nth-child(4) {
-  background: linear-gradient(135deg, #ed42643a, #ffedbc9a);
-  filter: blur(0.3);
+  background: linear-gradient(135deg, #bd435b73, #9a1db960);
+  filter: blur(0.3px);
 }
 
 /* * Footer *  */
@@ -277,8 +259,8 @@ footer {
   justify-content: center;
   flex-shrink: 0;
 
+  margin-top: auto;
   padding: 10px 20px;
-
 
   font-family: Arial, Helvetica, sans-serif;
 }
