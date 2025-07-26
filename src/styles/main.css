@@ -1,6 +1,4 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   color: #f2f0ef;
 }
@@ -50,7 +48,7 @@ body::-webkit-scrollbar {
 /* * logo * */
 
 #nome-logo{
-  margin-top: 1.7vh;
+  margin-top: 0vh;
   margin-left: 4vh;
 }
 
@@ -74,7 +72,7 @@ body::-webkit-scrollbar {
   font-family: Arial, Helvetica, sans-serif;
   z-index: 99999;
 
-  margin-top: 3vh;
+  margin-top: 1vh;
 
 }
 
@@ -128,23 +126,29 @@ body::-webkit-scrollbar {
 #title-one {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 5vh;
-  font-size: 200px;
+  font-size: 150px;
   margin-left: 4.1vh;
+
+  letter-spacing: 1.5vw;
 }
 #title-two {
   font-family: Arial, Helvetica, sans-serif;
   float: right;
-  font-size: 200px;
+  font-size: 150px;
   margin-right: 4.1vh;
+
+  letter-spacing: 1.5vw;
+
 }
 
 #value-text {
   font-family: Arial, sans-serif;
   color: #fcfcfc6b;
   font-size: 25px;
-  margin-left: 10vh;
-  margin-top: 6vh;
+  margin-left: 16vh;
+  margin-top: 4vh;
   font-weight: 100;
+  max-width: 500px;
 }
 
 .font-weight {
@@ -156,19 +160,14 @@ body::-webkit-scrollbar {
 
 
 #main-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  
 
   margin: auto;
   padding: 40px 20px;
-  /* min-height: calc(
-    100vh - 100px
-  );  */
+  
 }
 
-#apresentation-text {
+/* #apresentation-text {
   font-family: Arial, sans-serif;
   text-align: center;
   font-size: 25px;
@@ -178,22 +177,7 @@ body::-webkit-scrollbar {
   margin-top: 1em;
   margin-bottom: 3em;
   max-width: 1100px;
-}
-
-#arrowDown {
-  width: 60px;
-  filter: invert(1);
-
-  cursor: pointer;
-
-  margin-bottom: 10em;
-  
-}
-
-#arrowDown:hover{
-
-}
-
+} */
 
 .portfolio-navigation {
   display: flex;
@@ -203,20 +187,16 @@ body::-webkit-scrollbar {
   padding: 20px;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 7em;
+  margin-bottom: 3em;
 }
 
 .portfolio-navigation a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 220px; /* largura do quadrado */
-  height: 190px; /* altura do quadrado */
+  
+  width: 220px; 
+  height: 190px; 
   padding: 1rem;
   border-radius: 0.75rem;
 
-  background-color: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
   backdrop-filter: blur(2px);
@@ -298,9 +278,7 @@ footer {
   flex-shrink: 0;
 
   padding: 10px 20px;
-  /* position: sticky; */
 
-  margin-top: auto;
 
   font-family: Arial, Helvetica, sans-serif;
 }
