@@ -112,7 +112,7 @@ body::-webkit-scrollbar {
 #title-one {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 5vh;
-  font-size: 150px;
+  font-size: 160px;
   margin-left: 4.1vh;
 
   letter-spacing: 1.5vw;
@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
 #title-two {
   font-family: Arial, Helvetica, sans-serif;
   float: right;
-  font-size: 150px;
+  font-size: 160px;
   margin-right: 4.1vh;
 
   letter-spacing: 1.5vw;
@@ -146,29 +146,24 @@ body::-webkit-scrollbar {
 #main-block {
   margin: auto;
   padding: 40px 20px;
+
+  margin-top: 50px;
 }
 
-/* #apresentation-text {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: 25px;
-  color: #fcfcfc91;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  margin-top: 1em;
-  margin-bottom: 3em;
-  max-width: 1100px;
-} */
 
 .portfolio-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   gap: 20px;
   padding: 20px;
   margin: auto;
   margin-top: 0;
+  
   margin-bottom: 3em;
+
+  
 }
 
 .portfolio-navigation a {
@@ -181,6 +176,7 @@ body::-webkit-scrollbar {
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 0 0 transparent;
+
 
   backdrop-filter: blur(2px);
   transition: transform 0.5s ease, box-shadow 0.6s ease;
@@ -231,25 +227,25 @@ body::-webkit-scrollbar {
 /* * Primeiro botão: "Formação" * */
 .nav-block:nth-child(1) {
   background: linear-gradient(135deg, #40077c60, #0a3e9763);
-  filter: blur(0.3px);
+
 }
 
 /* * Segundo botão: "Educação" * */
 .nav-block:nth-child(2) {
   background: linear-gradient(135deg, #01836d57, #02aab086);
-  filter: blur(0.3px);
+ 
 }
 
 /* *Terceiro botão: "Projetos"* */
 .nav-block:nth-child(3) {
   background: linear-gradient(135deg, #fc4b1a50, #f7b633b0);
-  filter: blur(0.3px);
+  
 }
 
 /* *Quarto botão: "Sobre mim"* */
 .nav-block:nth-child(4) {
   background: linear-gradient(135deg, #bd435b73, #9a1db960);
-  filter: blur(0.3px);
+  
 }
 
 /* * Footer *  */

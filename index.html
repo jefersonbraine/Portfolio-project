@@ -7,90 +7,34 @@
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="src/styles/animations.css">
   </head>
+
   <body>
     <div class="animated-background"></div>
+    
     <!-- * Navbar* -->
      <div id="navbar-container">
+      <!-- * Logo -->
        <img id="nome-logo"
           src="images/meuNomeLogo.png"
           alt="Logo com o meu nome Jeferson Braine"
           width="100px"
         />
            <nav id="navbar">
-       
+       <!-- * Navbar -->
         <ol id="navbar-lista-superior">
-          <li>Home</li>
-          <li>Formação</li>
-          <li>Educação</li>
-          <li>Projetos</li>
-          <li>Sobre mim</li>
+          <li> <a href="src/pages/home.html" data-page="home">Home</a></li>
+          <li> <a href="src/pages/formation.html" data-page="formacao">Formação</a></li>
+          <li> <a href="src/pages/education.html" data-page="educacao">Educação</a></li>
+          <li> <a href="src/pages/projects.html" data-page="projetos">Projetos</a></li>
+          <li> <a href="src/pages/aboutMe.html" data-page="sobremim">Sobre mim</a></li>
         </ol>
            </nav>
      </div>
+
     <!-- * Header * -->
-    <header id="header-block">
-      <h1 id="title-one">SOFTWARE</h1>
-      <h1 id="title-two">ENGINEER</h1>
-      <p id="value-text">
-        <!-- Busco
-        <span class="font-weight">dominar a resolução de problemas e criar <br>tecnologia com
-          impacto</span>, aproveitando cada etapa <br> da
-        <span class="font-weight">jornada de aprendizado e implementação</span>. -->
-        De leis a algoritmos: Minha jornada em Engenharia de Software é sobre <span class="font-weight">desvendar o complexo</span> e criar o <span class="font-weight">extraordinário</span>.
-      </p>
-    </header>
-
-    <!-- * Main * -->
-    <main id="main-block">
-      <!-- <p id="apresentation-text">
-        Futuro(a) Engenheiro(a) de Software com o propósito de criar inovações
-        digitais e soluções inteligentes que impulsionam o progresso e fazem a
-        diferença no mundo da tecnologia.
-      </p> -->
-      <!-- <p id="apresentation-text">
-        De leis a algoritmos: Minha jornada em Engenharia de Software é sobre <span class="font-weight">desvendar o complexo</span> e criar o <span class="font-weight">extraordinário</span>.
-      </p> -->
-
-      <!-- <img id="arrowDown" src="images/icons/arrowDownIcon.png" alt=""> -->
-
-      <section class="portfolio-navigation">
-        <a href="caminho-para-formacao.html" class="nav-block">
-          <div class="nav-icon-container">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <img src="images/icons/graduationIcon.png" alt="Icone de quepe de graduação">
-          <h3>Formação</h3>
-          <p>Minha jornada acadêmica</p>
-        </a>
-
-        <a href="caminho-para-educacao.html" class="nav-block" style="background-color: 2d1d40;">
-          <div class="nav-icon-container">
-            <i class="fas fa-code"></i>
-          </div>
-          <img src="images/icons/codeIcon.png" alt="Icone de menor que e maior que">
-          <h3>Educação</h3>
-          <p>Cursos e certificações</p>
-        </a>
-
-        <a href="caminho-para-projetos.html" class="nav-block">
-          <div class="nav-icon-container">
-            <i class="fas fa-globe"></i>
-          </div>
-          <img src="images/icons/worldIcon.png" alt="Icone do globo">
-          <h3>Projetos</h3>
-          <p>Meus trabalhos desenvolvidos</p>
-        </a>
-
-        <a href="caminho-para-sobre-mim.html" class="nav-block">
-          <div class="nav-icon-container">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <img src="images/icons/userIcon.png" alt="Icone de usuário">
-          <h3>Sobre mim</h3>
-          <p>Conheça mais sobre mim</p>
-        </a>
-      </section>
-    </main>
+    <div id="dynamic-page">
+      
+    </div>
 
     <!-- * Footer * -->
     <footer>
@@ -99,5 +43,6 @@
         </p>
     </footer>
   </body>
+
   <script src="src/scripts/main.js"></script>
 </html>
