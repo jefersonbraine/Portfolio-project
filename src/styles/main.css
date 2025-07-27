@@ -108,6 +108,11 @@ body::-webkit-scrollbar {
   border-radius: 10px;
 }
 
+#navbar-lista-superior li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
 /* * Header *  */
 #title-one {
   font-family: Arial, Helvetica, sans-serif;
