@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
   border-radius: 14px;
   padding: 12px 25px;
   backdrop-filter: blur(2px);
-  /* background-color: #00000071; */
+  background-color: #000000ad;
   box-shadow: 1px 0px 8px 9px rgba(255, 255, 255, 0.178);
   -webkit-box-shadow: 1px 0px 8px 5px rgba(255, 255, 255, 0.13);
   -moz-box-shadow: 1px 0px 8px 2px rgba(255, 255, 255, 0.082);
@@ -249,4 +249,261 @@ footer {
   padding: 10px 20px;
 
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* * --- ABOUT ME SECTION --- * */
+
+#header-aboutme {
+  text-align: center;
+}
+
+/* ** Estilos para o Cartão de Perfil (#perfil-cartao-aboutme) ** */
+
+#perfil-cartao-aboutme {
+  grid-column: 1;
+  grid-row: 1;
+
+  background-color: #edeeef;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 317px;
+  height: 404px;
+}
+
+#photo-aboutme {
+  margin-top: -10px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+#name-aboutme {
+  color: #be1313;
+  font-size: 15px;
+  font-weight: 600;
+
+  margin-top: 20px;
+}
+
+#perfil-cartao-aboutme p {
+  color: #5d5d5d;
+  margin-top: 20px;
+}
+
+#perfil-cartao-aboutme ol {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#perfil-cartao-aboutme ol li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 32px;
+
+  border-radius: 20%;
+  background-color: #ffffff;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  border: 1px solid #c0c0c0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  padding: 0;
+}
+
+.nav-block-about-me {
+  width: 2028px;
+  height: 28px;
+  object-fit: contain;
+  filter: none;
+}
+
+#perfil-cartao-aboutme ol li a:hover {
+  background-color: #f3f4f6; /* Fundo um pouco mais claro/brilhante no hover */
+}
+
+#perfil-cartao-aboutme ol img {
+  width: 17px;
+
+  gap: 20px;
+}
+
+/* Icone de localização */
+.cidade img {
+  width: 12px;
+}
+
+.cidade {
+  font-size: 13px;
+}
+
+
+#estatisticas-bloco-aboutme {
+  grid-column: 1;
+  grid-row: 2;
+  width: 317px;
+  height: 218px;
+
+  background-color: #edeeef;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#estatisticas-bloco-aboutme h2 {
+  margin-bottom: 2vh;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#estatisticas-bloco-aboutme ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  font-size: 13px;
+  padding: 0;
+}
+
+#estatisticas-bloco-aboutme ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#estatisticas-bloco-aboutme ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+
+#estatisticas-bloco-aboutme .stat-label {  
+  font-weight: normal;
+  color: #555555;
+}
+
+#estatisticas-bloco-aboutme .stat-value {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sobre-mim-grid-layout p {
+  /* Se o p está logo abaixo do h1 e antes do main */
+  color: #000000;
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço abaixo */
+}
+
+.sobre-mim-grid-layout h2 {
+  color: #000000;
+}
+
+.sobre-mim-grid-layout {
+  display: grid;
+
+  grid-template-columns: auto auto;
+
+  column-gap: 21px;
+  row-gap: 28px;
+
+  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+
+  justify-content: center;
+
+
+  border-radius: 20px;
+}
+
+
+/*  ABOUT ME -- MAIN */
+
+/* --- QUEM SOU EU --- */
+.quem-sou-eu {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #f2f0ef;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  width: 663px;
+  height: 317px;
+}
+
+.quem-sou-eu p {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: justify;
+
+}
+
+/* HABILIDADES TECNICAS */
+
+
+.habilidades-tecnicas {
+  grid-column: 2; /* Ocupa a 2ª coluna */
+  grid-row: 2; /* Ocupa a 2ª linha */
+  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
+  background-color: #f2f0ef;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  width: 663px;
+  height: 512px;
+
+  margin-top: -9.78vh;
+}
+
+/* INTERESSES E HOBBIES */
+
+.interesses-hobbies {
+  grid-column: 1; /* Ocupa a 2ª coluna */
+  grid-row: 3; /* Ocupa a 2ª linha */
+  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
+  background-color: #f2f0ef;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vamos-conversar {
+  grid-column: 2; /* Ocupa a 2ª coluna */
+  grid-row: 3; /* Ocupa a 2ª linha */
+  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
+  background-color: #f2f0ef;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .sobre-mim-grid-layout {
+    grid-template-columns: 1fr; /* Muda para 1 coluna */
+    gap: 20px; /* Espaçamento entre as seções quando estão empilhadas */
+    padding: 10px;
+    margin: 20px auto;
+  }
+  /* As regras grid-column e grid-row ainda valem, mas como só tem 1 coluna,
+       todos os itens ocuparão a única coluna na ordem em que aparecem no HTML. */
 }
