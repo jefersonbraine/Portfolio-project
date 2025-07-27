@@ -11,21 +11,18 @@ html {
   height: 100%;
   box-sizing: border-box;
   background-color: #090b0c;
-  
 }
-
 
 *,
 *::before,
 *::after {
-   margin: 0;
+  margin: 0;
   padding: 0;
 }
 ::selection {
   background-color: #464646;
   color: #f2f0ef;
 }
-
 
 /* * BODY * */
 body {
@@ -41,14 +38,14 @@ body::-webkit-scrollbar {
 
 /* * logo * */
 
-#nome-logo{
+#nome-logo {
   width: 120px;
   margin-left: 4vh;
 }
 
 /* * Navbar * */
 
-#navbar-container{
+#navbar-container {
   display: flex;
   flex-direction: row;
 }
@@ -60,14 +57,13 @@ body::-webkit-scrollbar {
   right: 0; /* Estica a navbar por toda a largura */
   display: flex;
   flex-direction: row;
-  
+
   padding: 10px 20px;
 
   font-family: Arial, Helvetica, sans-serif;
   z-index: 99999;
 
   margin-top: 2vh;
-
 }
 
 #navbar-lista-superior {
@@ -86,9 +82,7 @@ body::-webkit-scrollbar {
   -moz-box-shadow: 1px 0px 8px 2px rgba(255, 255, 255, 0.082);
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-
   margin: auto;
- 
 }
 
 #navbar-lista-superior li {
@@ -129,7 +123,6 @@ body::-webkit-scrollbar {
   margin-right: 4.1vh;
 
   letter-spacing: 1.5vw;
-
 }
 
 #value-text {
@@ -155,20 +148,17 @@ body::-webkit-scrollbar {
   margin-top: 50px;
 }
 
-
 .portfolio-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
   gap: 20px;
   padding: 20px;
   margin: auto;
   margin-top: 0;
-  
-  margin-bottom: 3em;
 
-  
+  margin-bottom: 3em;
 }
 
 .portfolio-navigation a {
@@ -176,12 +166,11 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 220px; 
-  height: 190px; 
+  width: 220px;
+  height: 190px;
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 0 0 transparent;
-
 
   backdrop-filter: blur(2px);
   transition: transform 0.5s ease, box-shadow 0.6s ease;
@@ -232,25 +221,21 @@ body::-webkit-scrollbar {
 /* * Primeiro botão: "Formação" * */
 .nav-block:nth-child(1) {
   background: linear-gradient(135deg, #40077c60, #0a3e9763);
-
 }
 
 /* * Segundo botão: "Educação" * */
 .nav-block:nth-child(2) {
   background: linear-gradient(135deg, #01836d57, #02aab086);
- 
 }
 
 /* *Terceiro botão: "Projetos"* */
 .nav-block:nth-child(3) {
   background: linear-gradient(135deg, #fc4b1a50, #f7b633b0);
-  
 }
 
 /* *Quarto botão: "Sobre mim"* */
 .nav-block:nth-child(4) {
   background: linear-gradient(135deg, #bd435b73, #9a1db960);
-  
 }
 
 /* * Footer *  */
