@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const pageContentLoader = document.getElementById("dynamic-page");
-  const allNavLinks = document.querySelectorAll("#navbar-lista-superior a, .nav-block");
+  const allNavLinks = document.querySelectorAll(
+    "#navbar-lista-superior a, .nav-block"
+  );
 
   // ** MAPEA OS IDENTIFICADORES DO data-page PARA OS CAMINHOS REAIS DOS ARQUIVOS **
   const pagePaths = {
@@ -10,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     projetos: "src/pages/projects.html",
     sobremim: "src/pages/aboutMe.html",
   };
+
+  // * Rastrear a última página visitada *
+  let lastPageIdentifier = '';
+  const basePageTitle = "Meu Portfólio"; //título base
 
   // * Função para carregar o conteúdo de uma página *
   async function loadPage(pageIdentifier) {
@@ -30,26 +36,49 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`Erro ao carregar ${filePath}: ${response.statusText}`);
       }
       const htmlContent = await response.text();
-        pageContentLoader.innerHTML = htmlContent;
+      pageContentLoader.innerHTML = htmlContent;
+
+      // * 1. * .active no navbar
+      // Marcador da navbar quando é selecionado
+      // remove a classe active que a tenha no momento
+      const currentActiveLi = document.querySelector(
+        "#navbar-lista-superior li.active"
+      );
+      if (currentActiveLi) {
+        currentActiveLi.classList.remove("active");
+      }
+
+      //adiciona a classe active
+      const newActiveLink = document.querySelector(
+        `#navbar-lista-superior a[data-page="${pageIdentifier}"]`
+      );
+      if (newActiveLink && newActiveLink.parentElement.tagName === "LI") {
+        //adiciona a classe
+        newActiveLink.parentElement.classList.add("active");
+      }
+        // ** Fim da lógica do active
         
-        // ** .active no navbar
-        // Marcador da navbar quando é selecionado
-        // remove a classe active que a tenha no momento
-        const currentActiveLi = document.querySelector('#navbar-lista-superior li.active');
-        if (currentActiveLi) {
-            currentActiveLi.classList.remove('active');
+        // * 2. * Mudar título da aba do navegador
+        let newTitle = "";
+        if (pageIdentifier === 'home') {
+            if (lastPageIdentifier !== 'home' && lastPageIdentifier !== '') { //se está indo pra home e a página anterior era outra, mosta a mensagem especial
+                newTitle = `Bem vindo(a) de volta à Home! | ${basePageTitle}`;
+            } else {
+                newTitle = `Home | ${basePageTitle}`; //Primeira vez na home ou recarregou o site 
+            }
+        } else {
+            //primeira letra maiúscula
+            const capitalizedIdentifier = pageIdentifier.charAt(0).toUpperCase() + pageIdentifier.slice(1);
+            newTitle = `${capitalizedIdentifier} | ${basePageTitle}`;
         }
 
-        //adiciona a classe active
-        const newActiveLink = document.querySelector(`#navbar-lista-superior a[data-page="${pageIdentifier}"]`);
-        if (newActiveLink && newActiveLink.parentElement.tagName === "LI") {
-            //adiciona a classe
-            newActiveLink.parentElement.classList.add('active');
-        }
-        // ** Fim da lógica do active
+        document.title = newTitle //atualiza o título
+
+        lastPageIdentifier = pageIdentifier //atualiza o lastpageidentifier depois do carregamento
 
       // * Atualiza a URL do navegador sem recarregar a página *
-      history.pushState({ page: pageIdentifier }, "", `#${pageIdentifier}`);
+        history.pushState({ page: pageIdentifier }, "", `#${pageIdentifier}`);
+        
     } catch (error) {
       console.error("Erro ao carregar a página:", error);
       pageContentLoader.innerHTML = `<p style="text-align: center; color: red;">Não foi possível carregar o conteúdo de ${pageIdentifier}.</p>`;
