@@ -253,6 +253,20 @@ footer {
 
 /* * --- ABOUT ME SECTION --- * */
 
+#header-aboutme {
+  text-align: center;
+}
+
+#header-aboutme h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+#header-aboutme P {
+  font-size: 25px;
+  color: #fcfcfc6b;
+}
+
 .sobre-mim-grid-layout p {
   /* Se o p está logo abaixo do h1 e antes do main */
   color: #000000;
@@ -279,10 +293,6 @@ footer {
   justify-content: center;
 
   border-radius: 20px;
-}
-
-#header-aboutme {
-  text-align: center;
 }
 
 /* ** Estilos para o Cartão de Perfil (#perfil-cartao-aboutme) ** */
@@ -463,10 +473,10 @@ p.cidade {
   grid-column: 2; /* Ocupa a 2ª coluna */
   grid-row: 2; /* Ocupa a 2ª linha */
   /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
-  background-color: #EDEEEF;
+  background-color: #edeeef;
 
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   color: #000000;
   width: 663px;
@@ -485,114 +495,204 @@ p.cidade {
 }
 
 .habilidades-tecnicas ul {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    gap: 8px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .habilidades-tecnicas ul li {
-    display: flex; 
-    flex-direction: column;
-    font-size: 10px; 
-    color: #333; 
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  color: #333;
 }
 
 .habilidades-tecnicas ul li span {
   color: black;
   font-size: 13px;
-  
 }
 
 /* ** Container da Barra de Progresso e Porcentagem ** */
 .skill-level {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-    width: 100%; 
-    max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* ** Container da Barra de Progresso (fundo cinza claro) ** */
 .progress-bar-container {
-    flex-grow: 1; 
-    height: 8px; 
-    background-color: #e0e0e0; 
-    border-radius: 4px; 
-    overflow: hidden; 
+  flex-grow: 1;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 /* ** Preenchimento da Barra de Progresso (fundo cinza escuro) ** */
 .progress-bar-fill {
-    height: 100%;
-    background-color: #333; 
-    border-radius: 4px; 
-  
+  height: 100%;
+  background-color: #333;
+  border-radius: 4px;
 }
 
 /* ** Texto da Porcentagem ** */
 .percentage {
-    font-size: 0.9em; 
-    font-weight: normal; 
-    color: #000000; 
-    white-space: nowrap; 
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #000000;
+  white-space: nowrap;
 }
 
 /* ** RESPONSIVIDADE (Ajustes para telas menores) ** */
 @media (max-width: 768px) {
-    .skill-level {
-        width: 50%; 
-        max-width: 180px;
-    }
-    .habilidades-tecnicas ul li {
-        font-size: 1em;
-    }
+  .skill-level {
+    width: 50%;
+    max-width: 180px;
+  }
+  .habilidades-tecnicas ul li {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 480px) {
-    .skill-level {
-        width: 45%;
-        max-width: 150px;
-        gap: 5px;
-    }
-    .habilidades-tecnicas ul li {
-        font-size: 0.9em;
-    }
-    .percentage {
-        font-size: 0.8em;
-    }
+  .skill-level {
+    width: 45%;
+    max-width: 150px;
+    gap: 5px;
+  }
+  .habilidades-tecnicas ul li {
+    font-size: 0.9em;
+  }
+  .percentage {
+    font-size: 0.8em;
+  }
 }
 
 /* INTERESSES E HOBBIES */
 
 .interesses-hobbies {
-  grid-column: 2; 
-  grid-row: 3; 
-  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
+  grid-column: 2;
+  grid-row: 3;
   background-color: #edeeef;
 
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 663px;
+
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.interesses-hobbies h2 {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hobbies-grid {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+
+  /* row-gap: -30px; */
+  column-gap: 15px;
+  /* gap: 15px;  */
+}
+
+
+
+.hobby-item {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none; 
+
+}
+
+
+
+.hobby-icon-container {
+  width: 32px; 
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px; 
+
+  background-color: #f3f4f6;
+
+}
+
+.hobby-icon-container img {
+  width: 20px; 
+  height: 20px;
+  object-fit: contain;
+  filter: none; 
+}
+
+.hobby-icon-container i {
+  font-size: 1.1em; 
+  color: #555; 
+}
+
+
+.hobby-text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.hobby-text-content h4 {
+  margin-bottom: 4px; 
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+
+.hobby-text-content p {
+  font-size: 0.8em; 
+  color: #666;
+  margin: 0;
+
+}
+
+/* ** RESPONSIVIDADE ** */
+@media (max-width: 480px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr; 
+  }
+  .hobby-item {
+    padding: 10px;
+    font-size: 0.9em;
+  }
 }
 
 /* VAMOS CONVERSAR */
 .vamos-conversar {
   grid-column: 2;
-  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
   background-color: #edeeef;
 
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
   .sobre-mim-grid-layout {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr;
+    gap: 20px;
     padding: 10px;
     margin: 20px auto;
   }
