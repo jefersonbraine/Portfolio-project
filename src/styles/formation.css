@@ -1,0 +1,55 @@
+/* * --- FORMATION SECTION --- * */
+
+#header-formation {
+  text-align: center;
+}
+
+#header-formation h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+#header-formation p {
+  font-size: 17.5px;
+  color: #fcfcfc6b;
+}
+
+/* * MERITS SECTION *  */
+
+.merits-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 42px;
+}
+
+/* Estilo para cada item de conquista (o card individual) */
+.merits-item {
+  background-color: #edeeef; /* Cor de fundo do card, um cinza claro */
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 30px 40px; /* Espaçamento interno */
+  text-align: center; /* Centraliza texto e ícone */
+  width: 245px; /* Largura fixa para cada card (ajuste se necessário) */
+  height: 119px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: space-between; /* Centraliza verticalmente o conteúdo */
+}
+
+.merits-item h3 {
+  color: #333; /* Cor do texto do título */
+  font-size: 1em; /* Tamanho da fonte do título */
+
+  font-weight: 440;
+}
+
+.merits-item p {
+  color: #555; /* Cor do texto do parágrafo */
+  font-size: 1.2em; /* Tamanho da fonte do número */
+
+  margin-top: 20px;
+}
