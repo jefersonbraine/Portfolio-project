@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // * Rastrear a última página visitada *
-  let lastPageIdentifier = '';
+  let lastPageIdentifier = "";
   const basePageTitle = "Meu Portfólio"; //título base
 
   // * Função para carregar o conteúdo de uma página *
@@ -56,29 +56,30 @@ document.addEventListener("DOMContentLoaded", () => {
         //adiciona a classe
         newActiveLink.parentElement.classList.add("active");
       }
-        // ** Fim da lógica do active
-        
-        // * 2. * Mudar título da aba do navegador
-        let newTitle = "";
-        if (pageIdentifier === 'home') {
-            if (lastPageIdentifier !== 'home' && lastPageIdentifier !== '') { //se está indo pra home e a página anterior era outra, mosta a mensagem especial
-                newTitle = `Bem vindo(a) de volta à Home! | ${basePageTitle}`;
-            } else {
-                newTitle = `Home | ${basePageTitle}`; //Primeira vez na home ou recarregou o site 
-            }
+      // ** Fim da lógica do active
+
+      // * 2. * Mudar título da aba do navegador
+      let newTitle = "";
+      if (pageIdentifier === "home") {
+        if (lastPageIdentifier !== "home" && lastPageIdentifier !== "") {
+          //se está indo pra home e a página anterior era outra, mosta a mensagem especial
+          newTitle = `Bem vindo(a) de volta à Home! | ${basePageTitle}`;
         } else {
-            //primeira letra maiúscula
-            const capitalizedIdentifier = pageIdentifier.charAt(0).toUpperCase() + pageIdentifier.slice(1);
-            newTitle = `${capitalizedIdentifier} | ${basePageTitle}`;
+          newTitle = `Home | ${basePageTitle}`; //Primeira vez na home ou recarregou o site
         }
+      } else {
+        //primeira letra maiúscula
+        const capitalizedIdentifier =
+          pageIdentifier.charAt(0).toUpperCase() + pageIdentifier.slice(1);
+        newTitle = `${capitalizedIdentifier} | ${basePageTitle}`;
+      }
 
-        document.title = newTitle //atualiza o título
+      document.title = newTitle; //atualiza o título
 
-        lastPageIdentifier = pageIdentifier //atualiza o lastpageidentifier depois do carregamento
+      lastPageIdentifier = pageIdentifier; //atualiza o lastpageidentifier depois do carregamento
 
       // * Atualiza a URL do navegador sem recarregar a página *
-        history.pushState({ page: pageIdentifier }, "", `#${pageIdentifier}`);
-        
+      history.pushState({ page: pageIdentifier }, "", `#${pageIdentifier}`);
     } catch (error) {
       console.error("Erro ao carregar a página:", error);
       pageContentLoader.innerHTML = `<p style="text-align: center; color: red;">Não foi possível carregar o conteúdo de ${pageIdentifier}.</p>`;

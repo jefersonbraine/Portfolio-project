@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  color: #f2f0ef;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #090b0c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background-color: #464646;
+  color: #f2f0ef;
+}
+
+/* * BODY * */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
