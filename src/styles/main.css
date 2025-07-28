@@ -588,6 +588,8 @@ p.cidade {
   color: #333;
   display: flex;
   flex-direction: column;
+
+  margin-top: -7px;
 }
 
 .interesses-hobbies h2 {
@@ -609,8 +611,6 @@ p.cidade {
   /* gap: 15px;  */
 }
 
-
-
 .hobby-item {
   display: flex; 
   align-items: center; 
@@ -620,8 +620,6 @@ p.cidade {
   text-decoration: none; 
 
 }
-
-
 
 .hobby-icon-container {
   width: 32px; 
@@ -681,13 +679,103 @@ p.cidade {
 
 /* VAMOS CONVERSAR */
 .vamos-conversar {
+  display: flex;
+  flex-direction: column;
   grid-column: 2;
   background-color: #edeeef;
 
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  margin-top: -7px;
 }
+
+.vamos-conversar h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.vamos-conversar p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* ** Container que agrupa os blocos de contato ** */
+/* Certifique-se que este container está no seu HTML, envolvendo todos os links de contato */
+.contact-info-block {
+    display: flex;
+    flex-direction: column; /* Coloca os blocos de contato um abaixo do outro */
+   
+    
+}
+
+/* ** Estilo para cada item de contato (o link <a>) ** */
+.contact-item {
+    display: flex;          
+    align-items: center; 
+    width: 619px;  
+    justify-content: space-between; 
+    
+    border-radius: 8px;
+    padding: 10px 15px; 
+    text-decoration: none; /* Remove sublinhado do link */
+    color: #333; /* Cor do texto padrão para o bloco */
+    
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+    /* height: 38px; (Não use fixed height se o padding já controla, ou use min-height) */
+}
+
+.contact-item:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px); /* Efeito sutil de levantar */
+   
+}
+
+/* ** Estilo para o container do Ícone da Esquerda ** */
+.contact-icon-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Largura do container do ícone */
+    height: 24px; /* Altura do container do ícone */
+    margin-right: 10px; /* Espaço entre o ícone esquerdo e o texto */
+}
+.contact-icon-left img {
+    width: 14px; /* Tamanho da imagem do ícone */
+    height: 14px;
+    object-fit: contain;
+    filter: none;
+}
+
+
+/* ** Estilo para o texto do contato (o e-mail, o telefone) ** */
+.contact-text {
+    flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível entre os ícones */
+    font-size: .9em;
+    color: #333; /* Cor do texto (escura) */
+    white-space: nowrap; /* Evita que o texto quebre linha */
+    overflow: hidden; /* Esconde texto que excede o limite */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
+
+/* ** Estilo para o container do Ícone da Direita (link externo/share) ** */
+.contact-icon-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; 
+    height: 20px; 
+    margin-left: 10px; 
+}
+.contact-icon-right img {
+    width: 14px; /* Tamanho do ícone de link externo */
+    height: 14px;
+    object-fit: contain;
+    filter: none; /* Garante a cor original */
+}
+
 
 @media (max-width: 768px) {
   .sobre-mim-grid-layout {
