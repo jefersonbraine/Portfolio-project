@@ -50,7 +50,7 @@ O design de todas as páginas e estrutura do projeto foi feito inteiramente por 
 - Acrescentei um background animado para o site, para diminuir o ar de "estático".
 
 
-## 🧭 Adições futuras....
+### 🧭 Adições futuras....
 - Integrar com uma API para exibir projetos do GitHub automaticamente.
 - Melhorar a acessibilidade e performance.
 - Implementar modo escuro.
