@@ -13,3 +13,64 @@
   font-size: 25px;
   color: #fcfcfc6b;
 }
+
+.achievements-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Estilo para cada item de conquista (o card individual) */
+.achievement-item {
+  background-color: #f0f2f5; /* Cor de fundo do card, um cinza claro */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 30px 40px; /* Espaçamento interno */
+  text-align: center; /* Centraliza texto e ícone */
+  width: 244px; /* Largura fixa para cada card (ajuste se necessário) */
+  height: 175px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Estilo para o container do ícone/imagem */
+.achievement-icon {
+  width: 50px; /* Largura e altura para o círculo do ícone */
+  height: 50px;
+  border-radius: 50%; /* Faz um círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaçamento abaixo do ícone */
+}
+
+.achievement-icon.icon-purple {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo para a imagem dentro do ícone */
+.achievement-img {
+  max-width: 70%; /* Garante que a imagem não transborde o círculo */
+  max-height: 70%; /* Garante que a imagem não transborde o círculo */
+}
+
+/* Estilo para os títulos */
+.achievement-item h3 {
+  color: #333; /* Cor do texto do título */
+  font-size: 1em; /* Tamanho da fonte do título */
+  
+  font-weight: 440;
+}
+
+/* Estilo para os parágrafos de número/texto */
+.achievement-item p {
+  color: #555; /* Cor do texto do parágrafo */
+  font-size: 1.5em; /* Tamanho da fonte do número */
+  
+  margin-top: 20px;
+}
