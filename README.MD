@@ -17,9 +17,11 @@ Durante o desenvolvimento deste projeto, pude:
 
 ## 📑 Seções do portfólio
 - Página inicial com apresentação pessoal.
+- Formação Acadêmica.
+- Cursos e especializações realizados.
 - Seção de projetos com links e descrições.
+- Página Sobre mim.
 - Contato via formulário ou redes sociais.
-- Design responsivo para dispositivos móveis.
 
 ### ✍ Design
 Todo o design das páginas, como a estrutura do projeto, foram feitos inteiramente por mim, utilizando os seguintes softwares:
