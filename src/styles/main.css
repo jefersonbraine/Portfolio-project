@@ -1,8 +1,10 @@
 /* * logo * */
 
 #nome-logo {
-  width: 120px;
+  width: 110px;
   margin-left: 4vh;
+  margin-top: .5vh;
+  filter: invert(1);
 }
 
 /* * Navbar * */
