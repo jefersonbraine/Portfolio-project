@@ -1,0 +1,26 @@
+/* * --- PROJECTS SECTION --- * */
+
+#header-projects {
+  text-align: center;
+}
+
+#header-projects h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+#header-projects p {
+  font-size: 17.5px;
+  color: #fcfcfc6b;
+}
+
+
+
+.status-badge.status-completed-green {
+  background-color: #dbfce7;
+  color: #016630;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 300;
+}
