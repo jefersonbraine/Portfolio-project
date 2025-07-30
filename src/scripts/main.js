@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cursos: "src/pages/courses.html",
     projetos: "src/pages/projects.html",
     sobremim: "src/pages/aboutMe.html",
-    contateme: "src/pages/contactMe.html",
+    contacteme: "src/pages/contactMe.html",
   };
 
   // * Rastrear a última página visitada *
