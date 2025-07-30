@@ -1,15 +1,15 @@
-/* * --- EDUCATION SECTION --- * */
+/* * --- COURSE SECTION --- * */
 
-#header-education {
+#header-courses {
   text-align: center;
 }
 
-#header-education h1 {
+#header-courses h1 {
   font-size: 42px;
   font-weight: 400;
 }
 
-#header-education p {
+#header-courses p {
   font-size: 17.5px;
   color: #fcfcfc6b;
 }

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pagePaths = {
     home: "src/pages/home.html",
     formacao: "src/pages/formation.html",
-    educacao: "src/pages/education.html",
+    cursos: "src/pages/courses.html",
     projetos: "src/pages/projects.html",
     sobremim: "src/pages/aboutMe.html",
   };
