@@ -14,3 +14,280 @@
   color: #fcfcfc6b;
   
 }
+
+.contact-grid-layout {
+    display: grid;
+    grid-template-columns: 320px 680px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    max-width: 1050px; 
+    /* height: 401px; */
+    margin: 40px auto; 
+    justify-content: center;
+    align-items: start; 
+    grid-template-rows: auto auto;
+}
+
+/* Base style for all content sections (cards) */
+/*! bloco */
+.contact-grid-layout section {
+    background-color: #edeeef;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #39404d; 
+}
+
+.contact-grid-layout h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #39404d;
+}
+
+/* --- CONTACT INFO BLOCK (#contact-info-block) --- */
+#contact-info-block {
+    grid-column: 1; 
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    height: 401px;
+}
+
+#contact-info-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 36px;
+}
+
+.icon-contactme-background {
+  background-color: #f3f4f6;
+  border-radius: 8px; 
+  padding: 8px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+
+  width: 35px;
+  height: 35px; 
+
+}
+
+#contact-info-block .contactMe-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+#contact-info-block .contactMe-item img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+#contact-info-block .contactMe-item h4 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: 400;
+    color: #39404d;
+}
+
+/* TELEFONE, LOCALIZAÇÃO, HORÁRIO V */
+#contact-info-block .contactMe-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#contact-info-block .contactMe-item .small-text {
+    font-size: 12px;
+    color: #555; /* Cor do texto menor */
+    margin-top: -2px;
+}
+
+/* TELEFONE, LOCALIZAÇÃO, HORÁRIO  ^*/
+
+/* --- PORQUE TRABALHAR COMIGO (#why-work-with-me) --- */
+#why-work-with-me {
+    grid-column: 1;
+    grid-row: 2; 
+    padding: 25px;
+
+}
+
+#why-work-with-me ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#why-work-with-me ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #39404d;
+}
+
+#why-work-with-me ul li img {
+    width: 18px; 
+    height: 18px;
+}
+
+/* * SEND MESSAGE FORM (#send-message-form) * */
+#send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2; /
+   
+}
+
+#send-message-form form {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 10px); 
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; 
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #39404d;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background-color: #ffff; 
+    border: 1px solid #4a4a4a52; 
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #39404d;
+    outline: none; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    height: 30px;
+}
+
+
+#priority option {
+  color: #39404d;
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #0000006b; 
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #1e2939; 
+    box-shadow: 0 0 0 3px #1e29391c;
+}
+
+.form-group textarea {
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+.form-group .char-count {
+    font-size: 12px;
+    color: #39404d;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.send-message-button {
+    background-color: #1e2939; 
+    color: #fcfcfc;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.send-message-button img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%); 
+}
+
+.send-message-button:hover {
+    background-color: #2d3d55;
+    transform: translateY(-2px);
+}
+
+/* * ALTERNATIVE CONTACT SECTION (#alternative-contact) * */
+#alternative-contact {
+    grid-column: 1 / span 2;
+    grid-row: 4; 
+    text-align: center;
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    width: 588px;
+    height: 209px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alternative-contact p {
+    font-size: 15px;
+    color: #39404d;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button {
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a5b;
+    color: #39404d;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #edeeef;
+}
+
+
