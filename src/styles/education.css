@@ -132,6 +132,19 @@
   font-weight: 300;
 }
 
+.status-badge.status-doing-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf6db;
+  color: #746c0a;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.1; 
+}
+
 .course-duration {
   color: #a0a0a0;
   font-size: 0.8em;

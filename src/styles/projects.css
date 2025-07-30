@@ -475,3 +475,16 @@
   font-weight: 300;
   line-height: 1.1; 
 }
+
+.projects-status-badge.status-stoped-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f06d6d;
+  color: #770f0f;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.1; 
+}
