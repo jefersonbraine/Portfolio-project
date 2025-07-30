@@ -84,7 +84,7 @@
   border-top-right-radius: 20px;
 }
 
-.status-badge {
+.projects-status-badge {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -229,7 +229,7 @@
   filter: invert(1);
 }
 
-.status-badge.status-completed-green {
+.projects-status-badge.status-completed-green {
   display: flex;
   align-items: center;
   justify-content: center;
