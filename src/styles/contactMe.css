@@ -264,8 +264,13 @@
     margin-right: auto;
 }
 
+#alternative-contact h2 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
 #alternative-contact p {
-    font-size: 15px;
+    font-size: 14px;
     color: #39404d;
     margin-bottom: 25px;
     line-height: 1.6;
