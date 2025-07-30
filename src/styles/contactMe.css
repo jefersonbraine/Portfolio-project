@@ -1,16 +1,16 @@
 /* * --- CONTACT-ME SECTION --- * */
 
-#header-aboutme {
+#header-contactMe {
   text-align: center;
 }
 
-#header-aboutme h1 {
+#header-contactMe h1 {
   font-size: 42px;
   font-weight: 400;
 }
 
-#header-aboutme P {
-    font-size: 17.5px;
-
+#header-contactMe P {
+  font-size: 17.5px;
   color: #fcfcfc6b;
+  
 }
