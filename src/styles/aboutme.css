@@ -10,9 +10,23 @@
 }
 
 #header-aboutme P {
-    font-size: 17.5px;
+  font-size: 17.5px;
 
   color: #fcfcfc6b;
+}
+
+.sobre-mim-grid-layout {
+  display: grid;
+  grid-template-columns: 320px 680px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+  max-width: 1050px;
+  /* height: 401px; */
+  margin: 40px auto;
+  justify-content: center;
+  align-items: start;
+  grid-template-rows: auto auto;
 }
 
 .sobre-mim-grid-layout p {
