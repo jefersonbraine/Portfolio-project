@@ -1,480 +1,525 @@
-
 /* * --- Media Queries --- * */
 
 /* Desktop / Laptop (max-width: 1024px) */
 @media (max-width: 1024px) {
-    /* Home Section */
-    #title-one, #title-two {
-        font-size: 120px;
-        letter-spacing: 1vw;
-    }
-    #button-contactme {
-        margin-left: 900px;
-    }
-    #button-contactme p {
-        font-size: 30px;
-    }
-    #button-contactme img {
-        width: 35px;
-    }
-    #value-text {
-        font-size: 20px;
-        margin-left: 10vh;
-        max-width: 400px;
-    }
-    .portfolio-navigation a {
-        width: 200px;
-        height: 170px;
-    }
+  /* Home Section */
+  #title-one,
+  #title-two {
+    font-size: 80px;
+    letter-spacing: 1vw;
+  }
+  #button-contactme {
+    position: absolute;
+    z-index: 2;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0;
+  }
 
-    /* About Me Section */
-    .sobre-mim-grid-layout {
-        max-width: 900px;
-        grid-template-columns: 300px 1fr;
-        column-gap: 15px;
-    }
-    #perfil-cartao-aboutme, #estatisticas-bloco-aboutme {
-        width: 100%;
-    }
-    .quem-sou-eu, .habilidades-tecnicas, .interesses-hobbies, .vamos-conversar {
-        width: 100%;
-    }
-    .contact-item {
-        width: 100%;
-    }
+  #button-contactme p {
+    font-size: 20px;
+  }
+  #button-contactme img {
+    width: 20px;
+  }
+  #value-text {
+    font-size: 20px;
+    margin-left: 10vh;
+    max-width: 400px;
+  }
+  .portfolio-navigation a {
+    width: 200px;
+    height: 170px;
+  }
 
-    /* Contact Me Section */
-    .contact-grid-layout {
-        grid-template-columns: 1fr 1fr;
-        max-width: 900px;
-    }
-    #contact-info-block, #why-work-with-me {
-        width: auto;
-        height: auto;
-    }
-    #send-message-form {
-        grid-column: 2;
-        grid-row: 1 / span 2;
-    }
-    #alternative-contact {
-        width: auto;
-        grid-column: 1 / span 2;
-    }
+  /* About Me Section */
+  .sobre-mim-grid-layout {
+    max-width: 900px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 15px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme {
+    width: 100%;
+  }
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+  }
+  .contact-item {
+    width: 100%;
+  }
 
-    /* Formation Section */
-    .academic-history-section, .merits-section {
-        max-width: 900px;
-    }
-    .academic-card {
-        width: 600px;
-    }
-    .merits-item {
-        width: 200px;
-        padding: 20px 30px;
-    }
+  /* Contact Me Section */
+  .contact-grid-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+  #contact-info-block,
+  #why-work-with-me {
+    width: auto;
+    height: auto;
+  }
+  #send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  #alternative-contact {
+    width: auto;
+    grid-column: 1 / span 2;
+  }
 
-    /* Courses Section */
-    .courses-section {
-        max-width: 900px;
-    }
-    .course-card {
-        width: calc((100% - (2 * 20px)) / 2);
-    }
+  /* Formation Section */
+  .academic-history-section,
+  .merits-section {
+    max-width: 900px;
+  }
+  .academic-card {
+    width: 600px;
+  }
+  .merits-item {
+    width: 200px;
+    padding: 20px 30px;
+  }
 
-    .course-card p {
-        font-size: 10px;
-    }
-    .achievement-item {
-        width: 220px;
-        padding: 20px 30px;
-    }
+  /* Courses Section */
+  .courses-section {
+    max-width: 900px;
+  }
+  .course-card {
+    width: calc((100% - (2 * 20px)) / 2);
+  }
 
-    /* Projects Section */
-    .projects-section-wrapper {
-        max-width: 900px;
-    }
-    .big-card-section {
-        gap: 20px;
-    }
-    .projects-highlighted-card {
-        max-width: calc(50% - 10px);
-        height: auto;
-    }
-    .mini-card-section {
-        gap: 15px;
-    }
-    .all-projects-card {
-        max-width: calc(33.333% - 10px);
-        height: auto;
-    }
+  .course-card p {
+    font-size: 14px;
+  }
+  .achievement-item {
+    width: 220px;
+    padding: 20px 30px;
+  }
 
-    /* Navbar */
-    #navbar-lista-superior {
-        padding: 10px 20px;
-        gap: 8px;
-    }
-    #navbar-lista-superior li {
-        font-size: 0.9em;
-    }
+  /* Projects Section */
+  .projects-section-wrapper {
+    max-width: 900px;
+  }
+  .big-card-section {
+    gap: 20px;
+  }
+  .projects-highlighted-card {
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+  .mini-card-section {
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: calc(33.333% - 10px);
+    height: auto;
+  }
+
+  /* Navbar */
+  #navbar-lista-superior {
+    padding: 10px 20px;
+    gap: 8px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.9em;
+  }
 }
 
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Home Section */
-    #title-one, #title-two {
-        font-size: 80px;
-        letter-spacing: 1vw;
-        float: none;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #button-contactme {
-        position: static;
-        margin: 20px auto;
-        justify-content: center;
-    }
-    #button-contactme p {
-        font-size: 25px;
-    }
-    #button-contactme img {
-        width: 30px;
-    }
-    #value-text {
-        font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding: 0 20px;
-    }
-    .portfolio-navigation {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .portfolio-navigation a {
-        width: 80%;
-        max-width: 300px;
-        height: auto;
-        padding: 15px;
-    }
+  /* Home Section */
+  #title-one,
+  #title-two {
+    font-size: 80px;
+    letter-spacing: 1vw;
+    float: none;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #button-contactme {
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0;
+  }
 
-    /* About Me Section */
-    .sobre-mim-grid-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 10px;
-        margin: 20px auto;
-    }
-    #perfil-cartao-aboutme, #estatisticas-bloco-aboutme, .quem-sou-eu, .habilidades-tecnicas, .interesses-hobbies, .vamos-conversar {
-        width: 100%;
-        height: auto;
-    }
-    .habilidades-tecnicas {
-        margin-top: 0;
-    }
-    .interesses-hobbies {
-        margin-top: 0;
-    }
-    .hobbies-grid {
-        grid-template-columns: 1fr;
-    }
-    .contact-item {
-        width: 100%;
-    }
-    .skill-level {
-        width: 100%;
-        max-width: 100%;
-    }
-    .habilidades-tecnicas ul li {
-        font-size: 1em;
-    }
+  #button-contactme p {
+    font-size: 15px;
+  }
+  #button-contactme img {
+    width: 15px;
+  }
+  #value-text {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .portfolio-navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .portfolio-navigation a {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 15px;
+  }
 
-    /* Contact Me Section */
-    .contact-grid-layout {
-        grid-template-columns: 1fr;
-        padding: 10px;
-        margin: 20px auto;
-    }
-    #contact-info-block, #why-work-with-me, #send-message-form, #alternative-contact {
-        grid-column: 1;
-        grid-row: auto;
-        width: 100%;
-        height: auto;
-    }
-    .form-group {
-        flex: 1 1 100%;
-    }
-    #alternative-contact {
-        width: 100%;
-    }
+  /* About Me Section */
+  .sobre-mim-grid-layout {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  #photo-aboutme {
+    margin-top: 10px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme,
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+    height: auto;
+  }
+  .habilidades-tecnicas {
+    margin-top: 0;
+  }
+  .interesses-hobbies {
+    margin-top: 0;
+  }
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-item {
+    width: 100%;
+  }
+  .skill-level {
+    width: 100%;
+    max-width: 100%;
+  }
+  .habilidades-tecnicas ul li {
+    font-size: 1em;
+  }
 
-    /* Formation Section */
-    .academic-history-section, .merits-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .timeline-section {
-        padding-left: 0;
-        margin-top: 20px;
-        text-align: center;
-    }
-    .timeline-item {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .timeline-marker {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .timeline-dot {
-        margin-bottom: 20px;
-    }
-    .timeline-line, .timeline-line-last {
-        display: none; /* Hide vertical line for mobile */
-    }
-    .academic-card {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
+  /* Contact Me Section */
+  .contact-grid-layout {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  #contact-info-block,
+  #why-work-with-me,
+  #send-message-form,
+  #alternative-contact {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    height: auto;
+  }
+  .form-group {
+    flex: 1 1 100%;
+  }
+  #alternative-contact {
+    width: 100%;
+  }
 
-    .academic-card p {
-        text-align: start;
-    }
-    .merits-item {
-        width: 100%;
-        height: auto;
-        padding: 15px 20px;
-    }
+  /* Formation Section */
+  .academic-history-section,
+  .merits-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .timeline-section {
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .timeline-marker {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .timeline-dot {
+    margin-bottom: 20px;
+  }
+  .timeline-line,
+  .timeline-line-last {
+    display: none; /* Hide vertical line for mobile */
+  }
+  .academic-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
 
-    /* Courses Section */
-    .achievements-section, .courses-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .achievement-item, .course-card {
-        width: 60%;
-        height: auto;
-        padding: 15px;
-    }
+  .academic-card p {
+    text-align: start;
+  }
+  .merits-item {
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+  }
 
-    
-    .course-card {
-        width: 90%; /* Adjust as needed */
-        max-width: 400px;
-    }
+  /* Courses Section */
+  .achievements-section,
+  .courses-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .achievement-item,
+  .course-card {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+  }
 
-    .course-card p {
-        font-size: 13px;
-    }
+  .course-card {
+    width: 90%; /* Adjust as needed */
+    max-width: 400px;
+  }
 
-    
+  .course-card p {
+    font-size: 13px;
+  }
 
-    footer{
-        font-size: 14px;
-    }
+  footer {
+    font-size: 14px;
+  }
 
+  /* Projects Section */
+  .projects-section-wrapper {
+    padding: 10px;
+  }
+  .big-card-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .projects-highlighted-card {
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+  }
+  .mini-card-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+  }
 
-    /* Projects Section */
-    .projects-section-wrapper {
-        padding: 10px;
-    }
-    .big-card-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .projects-highlighted-card {
-        max-width: 90%;
-        width: 100%;
-        height: auto;
-    }
-    .mini-card-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .all-projects-card {
-        max-width: 90%;
-        width: 100%;
-        height: auto;
-    }
-
-    /* Navbar */
-    #navbar-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    #navbar {
-        position: static;
-        margin-top: 0;
-        padding: 10px;
-    }
-    #navbar-lista-superior {
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
-    }
-    #navbar-lista-superior li {
-        width: 100%;
-        text-align: center;
-    }
-    #nome-logo {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-    }
+  /* Navbar */
+  #navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar {
+    position: static;
+    margin-top: 0;
+    padding: 10px;
+  }
+  #navbar-lista-superior {
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+  }
+  #navbar-lista-superior li {
+    width: 100%;
+    text-align: center;
+  }
+  #nome-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
 }
 
 /* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
-    /* Home Section */
-    #title-one, #title-two {
-        font-size: 50px;
-    }
+  /* Home Section */
+  #title-one,
+  #title-two {
+    font-size: 50px;
+  }
 
-    #button-contactme {
-        position: absolute;
-        z-index: 2;
-        margin-top: 200px;
-        margin-left: 35px;
-    }
-    #button-contactme p {
-        font-size: 20px;
-    }
-    #button-contactme img {
-        width: 25px;
-    }
-    #value-text {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-    .portfolio-navigation a {
-        width: 95%;
-    }
+  #button-contactme {
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    max-width: 100%;
+    width: auto;
+    margin-left: 0;
+    gap: 10px;
+  }
 
-    /* About Me Section */
-    #header-aboutme h1 {
-        font-size: 32px;
-    }
-    #header-aboutme p {
-        font-size: 16px;
-    }
-    .habilidades-tecnicas ul li {
-        font-size: 0.9em;
-    }
-    .percentage {
-        font-size: 0.8em;
-    }
-    .hobby-item {
-        padding: 8px;
-        font-size: 0.8em;
-    }
-     .habilidades-tecnicas ul li {
-        font-size: 0.9em;
-    }
-    .percentage {
-        font-size: 0.8em;
-    }
-    .hobby-item {
-        padding: 8px;
-        font-size: 0.8em;
-    }
-    .sobre-mim-grid-layout {
-        padding: 10px;
-        gap: 15px; /* Pode ajustar o gap para telas ainda menores */
-    }
+  #button-contactme p {
+    font-size: 13px;
+  }
+  #button-contactme img {
+    width: 13px;
+  }
+  #value-text {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .portfolio-navigation a {
+    width: 95%;
+  }
 
-    .sobre-mim-grid-layout{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-    #photo-aboutme {
-        margin-top: 10px;
-        
-    }
-    
+  /* About Me Section */
+  #header-aboutme h1 {
+    font-size: 32px;
+  }
+  #header-aboutme p {
+    font-size: 16px;
+  }
+  .habilidades-tecnicas ul li {
+    font-size: 0.9em;
+  }
+  .percentage {
+    font-size: 0.8em;
+  }
+  .hobby-item {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  .habilidades-tecnicas ul li {
+    font-size: 0.9em;
+  }
+  .percentage {
+    font-size: 0.8em;
+  }
+  .hobby-item {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  .sobre-mim-grid-layout {
+    padding: 10px;
+    gap: 15px; /* Pode ajustar o gap para telas ainda menores */
+  }
 
-    /* Contact Me Section */
-    #header-contactMe h1 {
-        font-size: 32px;
-    }
-    #header-contactMe p {
-        font-size: 16px;
-    }
-    .form-group input, .form-group textarea, .form-group select {
-        padding: 10px;
-        font-size: 14px;
-    }
-    .send-message-button {
-        padding: 10px 20px;
-        font-size: 13px;
-    }
-    .social-button {
-        padding: 8px 20px;
-        font-size: 11px;
-    }
+  .sobre-mim-grid-layout {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  #photo-aboutme {
+    margin-top: 10px;
+  }
 
-    /* Formation Section */
-    #header-formation h1 {
-        font-size: 32px;
-    }
-    #header-formation p {
-        font-size: 16px;
-    }
-    .academic-card {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-    .merits-item {
-        padding: 10px 15px;
-    }
-    .academic-card p {
-        text-align: start;
-    }
+  /* Contact Me Section */
+  #header-contactMe h1 {
+    font-size: 32px;
+  }
+  #header-contactMe p {
+    font-size: 16px;
+  }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .send-message-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .social-button {
+    padding: 8px 20px;
+    font-size: 11px;
+  }
 
-    /* Courses Section */
-    #header-courses h1 {
-        font-size: 32px;
-    }
-    #header-courses p {
-        font-size: 16px;
-    }
-    .achievement-item, .course-card {
-        padding: 10px;
-    }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 4px 10px;
+  }
 
-    /* Projects Section */
-    #header-projects h1 {
-        font-size: 32px;
-    }
-    #header-projects p {
-        font-size: 16px;
-    }
-    .projects-highlighted-card, .all-projects-card {
-        padding: 15px;
-        font-size: 0.9em;
-    }
+  /* Formation Section */
+  #header-formation h1 {
+    font-size: 32px;
+  }
+  #header-formation p {
+    font-size: 16px;
+  }
+  .academic-card {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  .merits-item {
+    padding: 10px 15px;
+  }
+  .academic-card p {
+    text-align: start;
+  }
 
-    /* Navbar */
-    #navbar-lista-superior {
-        padding: 8px 10px;
-        gap: 5px;
-    }
-    #navbar-lista-superior li {
-        font-size: 0.8em;
-        padding: 6px 10px;
-    }
-    #nome-logo {
-        width: 90px;
-    }
+  /* Courses Section */
+  #header-courses h1 {
+    font-size: 32px;
+  }
+  #header-courses p {
+    font-size: 16px;
+  }
+  .achievement-item,
+  .course-card {
+    padding: 10px;
+  }
 
-    footer{
-        font-size: 12px;
-    }
+  /* Projects Section */
+  #header-projects h1 {
+    font-size: 32px;
+  }
+  #header-projects p {
+    font-size: 16px;
+  }
+  .projects-highlighted-card,
+  .all-projects-card {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  /* Navbar */
+  #navbar-lista-superior {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.8em;
+    padding: 6px 10px;
+  }
+  #nome-logo {
+    width: 90px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
