@@ -1,3 +1,4 @@
+<!-- Cabeçalho principal da página de contato -->
 <header id="header-contactMe">
   <h1>Entre em Contato</h1>
   <p>
@@ -6,12 +7,16 @@
   </p>
 </header>
 
+<!-- Conteúdo principal da página de contato -->
 <main class="contact-grid-layout">
+  <!-- Seção de informações de contato -->
   <section id="contact-info-block">
     <h2>Informações de Contato</h2>
     <ul>
+      <!-- Item de contato: Email -->
       <li>
         <div class="contactMe-item">
+          <!-- Ícone de email -->
           <div class="icon-contactme-background">
             <img src="images/icons/emailIcon.png" alt="Ícone de E-mail" />
           </div>
@@ -22,8 +27,10 @@
           </div>
         </div>
       </li>
+      <!-- Item de contato: Telefone -->
       <li>
         <div class="contactMe-item">
+          <!-- Ícone de telefone -->
           <div class="icon-contactme-background">
             <img src="images/icons/telephoneIcon.png" alt="Ícone de telefone" />
           </div>
@@ -34,13 +41,12 @@
           </div>
         </div>
       </li>
+      <!-- Item de contato: Localização -->
       <li>
         <div class="contactMe-item">
+          <!-- Ícone de localização -->
           <div class="icon-contactme-background">
-            <img
-              src="images/icons/locationIcon.png"
-              alt="Icone de localização"
-            />
+            <img src="images/icons/locationIcon.png" alt="Ícone de localização" />
           </div>
           <div>
             <h4>Localização</h4>
@@ -49,8 +55,10 @@
           </div>
         </div>
       </li>
+      <!-- Item de contato: Horário -->
       <li>
         <div class="contactMe-item">
+          <!-- Ícone de relógio -->
           <div class="icon-contactme-background">
             <img src="images/icons/clockIcon.png" alt="Ícone de relógio" />
           </div>
@@ -64,60 +72,53 @@
     </ul>
   </section>
 
+  <!-- Seção de motivos para trabalhar comigo -->
   <section id="why-work-with-me">
     <h2>Por que trabalhar comigo?</h2>
     <ul>
+      <!-- Motivo: Resposta rápida -->
       <li>
         <img src="images/icons/checkmarkIcon.png" alt="Ícone de check" />
         Resposta rápida
       </li>
+      <!-- Motivo: Projetos de qualidade -->
       <li>
         <img src="images/icons/checkmarkIcon.png" alt="Ícone de check" />
         Projetos de qualidade
       </li>
+      <!-- Motivo: Comunicação clara -->
       <li>
         <img src="images/icons/checkmarkIcon.png" alt="Ícone de check" />
         Comunicação clara
       </li>
+      <!-- Motivo: Prazos cumpridos -->
       <li>
-        <img src="images/icons/checkmarkIcon.png" alt="Ícone de check" /> Prazos
-        cumpridos
+        <img src="images/icons/checkmarkIcon.png" alt="Ícone de check" />
+        Prazos cumpridos
       </li>
     </ul>
   </section>
 
+  <!-- Seção do formulário de envio de mensagem -->
   <section id="send-message-form">
     <h2>Envie uma mensagem</h2>
     <form>
+      <!-- Campo: Nome -->
       <div class="form-group">
         <label for="name">Nome *</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Seu nome completo"
-          required
-        />
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
       </div>
+      <!-- Campo: Email -->
       <div class="form-group">
         <label for="email">Email *</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="seu@email.com"
-          required
-        />
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
       </div>
+      <!-- Campo: Telefone -->
       <div class="form-group">
         <label for="phone">Telefone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="(99) 99999-9999"
-        />
+        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" />
       </div>
+      <!-- Campo: Prioridade -->
       <div class="form-group">
         <label for="priority">Prioridade</label>
         <select id="priority" name="priority">
@@ -126,35 +127,25 @@
           <option value="baixa">Baixa</option>
         </select>
       </div>
+      <!-- Campo: Assunto -->
       <div class="form-group full-width">
         <label for="subject">Assunto *</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Sobre o que você gostaria de falar?"
-          required
-        />
+        <input type="text" id="subject" name="subject" placeholder="Sobre o que você gostaria de falar?" required />
       </div>
+      <!-- Campo: Mensagem -->
       <div class="form-group full-width">
         <label for="message">Mensagem *</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Conte-me mais sobre seu projeto ou ideia..."
-          maxlength="500"
-          required
-        ></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Conte-me mais sobre seu projeto ou ideia..." maxlength="500" required></textarea>
         <p class="char-count">0/500 caracteres</p>
       </div>
+      <!-- Botão de envio do formulário -->
       <button type="submit" class="send-message-button">
-        <img src="images/icons/sendIcon.png" alt="Ícone de enviar" /> Enviar
-        Mensagem
+        <img src="images/icons/sendIcon.png" alt="Ícone de enviar" /> Enviar Mensagem
       </button>
     </form>
   </section>
 
+  <!-- Seção de contatos alternativos -->
   <section id="alternative-contact">
     <h2>Prefere outro meio de contato?</h2>
     <p>
@@ -162,25 +153,11 @@
       <br />
       diretamente pelo LinkedIn ou WhatsApp para discutirmos seu projeto.
     </p>
+    <!-- Links para redes sociais -->
     <div class="social-links">
-      <a
-        href="https://www.linkedin.com/in/jefersonbraineleal"
-        target="_blank"
-        class="social-button"
-        >LinkedIn</a
-      >
-      <a
-        href="https://wa.me/5541996501459"
-        target="_blank"
-        class="social-button"
-        >WhatsApp</a
-      >
-      <a
-        href="https://github.com/jefersonbraine"
-        target="_blank"
-        class="social-button"
-        >GitHub</a
-      >
+      <a href="https://www.linkedin.com/in/jefersonbraineleal" target="_blank" class="social-button">LinkedIn</a>
+      <a href="https://wa.me/5541996501459" target="_blank" class="social-button">WhatsApp</a>
+      <a href="https://github.com/jefersonbraine" target="_blank" class="social-button">GitHub</a>
     </div>
   </section>
 </main>
