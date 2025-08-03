@@ -14,9 +14,9 @@
   color: #fcfcfc6b;
 }
 
-/* ACHIEVEMENTS SECTION  */
+/* * ACHIEVEMENTS SECTION **/
 
-.achievements-section {
+.achievements-section { //** Container das conquistas
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -25,13 +25,13 @@
   margin-top: 42px;
 }
 
-/* Estilo para cada item de conquista (o card individual) */
-.achievement-item {
+/** Estilo para cada item de conquista (o card individual) **/
+.achievement-item { //** Item de conquista
   background-color: #edeeef; /* Cor de fundo do card, um cinza claro */
   border-radius: 20px; /* Bordas arredondadas */
   padding: 30px 40px; /* Espaçamento interno */
   text-align: center; /* Centraliza texto e ícone */
-  width: 323px; /* Largura fixa para cada card (ajuste se necessário) */
+  width: 323px; /*! Largura fixa para cada card (ajustar se precisar)  */
   height: 175px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
   display: flex;
@@ -40,8 +40,8 @@
   justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
-/* Estilo para o container do ícone/imagem */
-.achievement-icon {
+/** Estilo para o container do ícone/imagem **/
+.achievement-icon { //** Container do ícone/imagem
   width: 50px; /* Largura e altura para o círculo do ícone */
   height: 50px;
   border-radius: 50%; /* Faz um círculo */
@@ -51,36 +51,36 @@
   margin-bottom: 20px; /* Espaçamento abaixo do ícone */
 }
 
-.achievement-icon.icon-purple {
+.achievement-icon.icon-purple { //** Ícone/imagem
   width: 40px;
   height: 40px;
 }
 
-/* Estilo para a imagem dentro do ícone */
+/** Estilo para a imagem dentro do ícone **/
 .achievement-img {
   max-width: 70%; /* Garante que a imagem não transborde o círculo */
   max-height: 70%; /* Garante que a imagem não transborde o círculo */
 }
 
-/* Estilo para os títulos */
-.achievement-item h3 {
+/** Estilo para os títulos **/
+.achievement-item h3 { //** Título
   color: #333; /* Cor do texto do título */
   font-size: 1em; /* Tamanho da fonte do título */
 
   font-weight: 440;
 }
 
-/* Estilo para os parágrafos de número/texto */
-.achievement-item p {
+/** Estilo para os parágrafos de número/texto **/
+.achievement-item p { //** Parágrafo
   color: #555; /* Cor do texto do parágrafo */
   font-size: 1.5em; /* Tamanho da fonte do número */
 
   margin-top: 20px;
 }
 
-/* COURSES SECTION  */
+/** COURSES SECTION  **/
 
-.courses-section {
+.courses-section { //** Container das cursos
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -91,12 +91,12 @@
   margin: 0 auto;
 }
 
-.course-card {
+.course-card { //** Card do curso
   background-color: #edeeef;
   border-radius: 20px;
   padding: 22px;
   /* width: 380px; */
-  width: calc((100% - (2 * 20px)) / 3);
+  width: calc((100% - (2 * 20px)) / 3); /* Largura do card para se adpatar a tela */
   width: 322px;
   height: 327px;
   color: #e0e0e0;
@@ -107,14 +107,14 @@
   transition: transform 0.3s ease, box-shadow 0.6s ease;
 }
 
-.card-header {
+.card-header { //** Cabeçalho do card do curso
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.status-badge.status-completed {
+.status-badge.status-completed { //** Badge de status completo
   background-color: #d8e7fb;
   color: #012ca1;
   padding: 2px 8px;
@@ -123,7 +123,7 @@
   font-weight: 300;
 }
 
-.status-badge.status-certified {
+.status-badge.status-certified { //** Badge de status certificado
   background-color: #dbfce7;
   color: #016630;
   padding: 2px 8px;
@@ -132,7 +132,7 @@
   font-weight: 300;
 }
 
-.status-badge.status-doing-yellow {
+.status-badge.status-doing-yellow { //** Badge de status em andamento
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,12 +145,12 @@
   line-height: 1.1; 
 }
 
-.course-duration {
+.course-duration { //** Duração do curso  
   color: #a0a0a0;
   font-size: 0.8em;
 }
 
-.course-title {
+.course-title { //** Título do curso
   color: #000000;
   font-size: 14px;
   font-weight: 400;
@@ -159,19 +159,19 @@
   margin-bottom: 10px;
 }
 
-.course-company,
-.course-year {
+.course-company, //** Empresa do curso
+.course-year { //** Ano do curso
   color: #686868;
   font-size: 0.9em;
   margin: 0;
 }
 
-.course-year {
+.course-year { //** Ano do curso
   margin-bottom: 12px;
   font-size: 0.8em;
 }
 
-.course-description {
+.course-description { //** Descrição do curso
   display: flex;
   align-items: center;
   gap: 10px; /* Espaçamento entre ícone e texto */
@@ -180,11 +180,11 @@
   margin-bottom: 13px; /* Espaço antes do botão */
 }
 
-.certificate-info img {
+.certificate-info img { //** Imagem do certificado
   width: 13px;
 }
 
-.certificate-info {
+.certificate-info { //** Container do certificado
   background-color: #f3f4f6;
   border-radius: 8px;
   padding: 8px 10px;
@@ -193,22 +193,22 @@
   gap: 3px;
   margin-bottom: 14px;
 }
-.certified-type {
+.certified-type { //** Tipo de certificado
   color: #364153;
   font-size: 0.8em;
 }
 
-.certificate-info .certificate-icon {
+.certificate-info .certificate-icon { //** Ícone do certificado
   color: #e0e0e0; /* Cor do ícone */
   font-size: 1.2em;
 }
 
-.view-certificate-icon {
+.view-certificate-icon { //** Ícone de visualizar certificado
   width: 13px;
   filter: invert(1);
 }
 
-.view-certification-button {
+.view-certification-button { //** Botão de visualizar certificado
   border-radius: 8px;
   padding: 8px 10px;
   text-decoration: none;
@@ -224,6 +224,6 @@
   align-items: center;
 }
 
-.course-card:hover {
+.course-card:hover { //** Hover do card do curso
   transform: scale(1.06);
 }

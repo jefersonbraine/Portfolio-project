@@ -1,20 +1,20 @@
 /* * --- FORMATION SECTION --- * */
 
-#header-formation {
+#header-formation { //** Container do header
   text-align: center;
 }
 
-#header-formation h1 {
+#header-formation h1 { //** Título do header
   font-size: 42px;
   font-weight: 400;
 }
 
-#header-formation p {
+#header-formation p { //** Parágrafo do header
   font-size: 17.5px;
   color: #fcfcfc6b;
 }
 
-.academic-history-section {
+.academic-history-section { //** Container da história acadêmica
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -33,14 +33,14 @@
   margin-top: 40px;
 }
 
-.timeline-item {
+.timeline-item { //** Item da timeline
   display: flex;
   align-items: flex-start;
   position: relative;
   margin-bottom: 42px;
 }
 
-.timeline-marker {
+.timeline-marker { //** Marker da timeline
   position: relative;
   width: 60px;
   display: flex;
@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.timeline-year {
+.timeline-year { //** Ano da timeline
   background: white;
   color: black;
   padding: 4px 10px;
@@ -60,7 +60,7 @@
   z-index: 2;
 }
 
-.timeline-dot {
+.timeline-dot { //** Dot da timeline
   width: 10px;
   height: 10px;
   background-color: white;
@@ -73,7 +73,7 @@
   margin-bottom: 60px;
 }
 
-.timeline-line {
+.timeline-line { //** Linha da timeline
   position: absolute;
   top: 20px;
   bottom: -148px;
@@ -81,7 +81,7 @@
   background: linear-gradient(to bottom, #ffffff33, #ffffff88, #ffffff33);
   z-index: 1;
 }
-.timeline-line-last {
+.timeline-line-last { //** Última linha da timeline
   position: absolute;
   top: 20px;
   bottom: -90px;
@@ -91,7 +91,7 @@
 }
 /*!  FINAL TIMELINE !*/
 
-.academic-card {
+.academic-card { //** Card da história acadêmica  
   background-color: #edeeef;
   border-radius: 20px;
   padding: 22px;
@@ -105,17 +105,17 @@
   margin-bottom: 0;
 }
 
-.academic-card:hover {
+.academic-card:hover { //** Hover do card da história acadêmica
   transform: scale(1.04);
 }
 
-.academic-card-header {
+.academic-card-header { //** Cabeçalho do card da história acadêmica
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.formation-duration {
+.formation-duration { //** Duração do curso
   color: #757575;
   font-size: 0.8em;
   background-color: #f3f4f6;
@@ -123,7 +123,7 @@
   border-radius: 20px;
 }
 
-.academic-title {
+.academic-title { //** Título do curso
   color: #000000;
   font-size: 14px;
   font-weight: 400;
@@ -132,13 +132,13 @@
   /* margin-bottom: 10px; */
 }
 
-.academic-company {
+.academic-company { //** Empresa do curso
   color: #525252;
   font-size: 0.9em;
   margin: 0;
 }
 
-.academic-TCC {
+.academic-TCC { //** TCC do curso
   display: flex;
   align-items: center;
   gap: 10px;
@@ -147,7 +147,7 @@
   margin-bottom: 13px; /* Espaço antes do botão */
 }
 
-.academic-description {
+.academic-description { //** Descrição do curso
   display: flex;
   align-items: center;
   gap: 10px; /* Espaçamento entre ícone e texto */
@@ -157,9 +157,9 @@
   margin-bottom: 13px; /* Espaço antes do botão */
 }
 
-/* * MERITS SECTION *  */
+/** MERITS SECTION **/
 
-.merits-section {
+.merits-section { //** Container das qualidades
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -169,31 +169,31 @@
 
 }
 
-/* Estilo para cada item de conquista (o card individual) */
-.merits-item {
-  background-color: #edeeef; /* Cor de fundo do card, um cinza claro */
-  border-radius: 20px; /* Bordas arredondadas */
-  padding: 30px 40px; /* Espaçamento interno */
-  text-align: center; /* Centraliza texto e ícone */
-  width: 245px; /* Largura fixa para cada card (ajuste se necessário) */
+/** Estilo para cada item de conquista (o card individual) **/
+.merits-item { //** Item da qualidade
+  background-color: #edeeef; 
+  border-radius: 20px; 
+  padding: 30px 40px;
+  text-align: center; 
+  width: 245px; /* Largura fixa para cada card (ajustar se necessário) */
   height: 119px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza verticalmente o conteúdo */
-  justify-content: space-between; /* Centraliza verticalmente o conteúdo */
+  align-items: center; 
+  justify-content: space-between; 
 }
 
-.merits-item h3 {
-  color: #333; /* Cor do texto do título */
-  font-size: 1em; /* Tamanho da fonte do título */
+.merits-item h3 { //** Título da qualidade
+  color: #333; 
+  font-size: 1em; 
 
   font-weight: 500;
 }
 
-.merits-item p {
-  color: #555; /* Cor do texto do parágrafo */
-  font-size: 1.2em; /* Tamanho da fonte do número */
+.merits-item p { //** Parágrafo da qualidade
+  color: #555; 
+  font-size: 1.2em; 
 
   margin-top: 20px;
 }

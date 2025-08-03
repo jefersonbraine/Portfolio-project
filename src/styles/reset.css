@@ -1,3 +1,6 @@
+/* * --- RESET CSS --- * */
+//RESETA TODAS AS CONFIGURAÇÕES PADRÕES DO HTML
+
 * {
   box-sizing: border-box;
   color: #f2f0ef;
@@ -16,9 +19,12 @@ html {
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove paddings padrão do navegador */
 }
+
+/* * ESTILIZAÇÃO DA SELEÇÃO DE TEXTO * */
+//Define como o texto selecionado pelo usuário deve aparecer
 ::selection {
   background-color: #464646;
   color: #f2f0ef;

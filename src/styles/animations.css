@@ -1,6 +1,6 @@
 
 /* * Animação background * */
-.animated-background {
+.animated-background { //* Container do background animado
   position: fixed;
   top: 0;
   left: 0;
@@ -9,30 +9,30 @@
   z-index: -2;
   background-color: #0d0d0d;
 
-  animation: moveBackground 15s linear infinite;
+  animation: moveBackground 15s linear infinite; //* Animação do background
 
-  background-image: linear-gradient(
+  background-image: linear-gradient( /* Gradiente */
       90deg,
       rgba(255, 255, 255, 0.08) 1px,
       transparent 1px
     ),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(45deg, rgba(100, 100, 100, 0.664) 2px, transparent 2px),
-    linear-gradient(-45deg, rgba(50, 50, 50, 0.541) 3px, transparent 3px);
+    linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px), /* Gradiente horizontal */
+    linear-gradient(45deg, rgba(100, 100, 100, 0.664) 2px, transparent 2px), /* Gradiente diagonal */
+    linear-gradient(-45deg, rgba(50, 50, 50, 0.541) 3px, transparent 3px); /* Gradiente diagonal invertido */
 
-  background-size: 50px 50px, 50px 50px, 100px 100px, 120px 120px;
+  background-size: 50px 50px, 50px 50px, 100px 100px, 120px 120px; /* Tamanho do gradiente */
 
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-position: 0 0; /* Posição inicial do gradiente */
+  background-repeat: repeat; /* Repete o gradiente */
 
-  animation: moveBackground 1.5s linear infinite;
+  animation: moveBackground 1.5s linear infinite; /* Animação do background */
 
-  will-change: background-position;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+  will-change: background-position; /* Avisa ao navegador que a posição do background será alterada */
+  backface-visibility: hidden; /* Oculta o fundo do elemento */
+  transform: translateZ(0); /* tira o efeito de 3D */
 }
 
-@keyframes moveBackground {
+@keyframes moveBackground { /* Animação do background */
   from {
     background-position: 0 0, 0 0, 0 0, 0 0;
   }
@@ -40,22 +40,4 @@
     background-position: 50px 0, 0 50px, 100px 100px, -120px -120px;
   }
 }
-
-
-/* #arrowDown{
-  animation: bounce 0.8s ease-in-out infinite alternate;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0); 
-  }
-  50% {
-    transform: translateY(-20px); 
-  }
-  100% {
-    transform: translateY(0); 
-  }
-} */
- 
 

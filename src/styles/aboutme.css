@@ -1,52 +1,52 @@
 /* * --- ABOUT ME SECTION --- * */
 
-#header-aboutme {
+#header-aboutme { //* Cabeçalho da seção sobre mim
   text-align: center;
 }
 
-#header-aboutme h1 {
+#header-aboutme h1 { //* Título do cabeçalho
   font-size: 42px;
   font-weight: 400;
 }
 
-#header-aboutme P {
+#header-aboutme P { //* Descrição do cabeçalho
   font-size: 17.5px;
 
   color: #fcfcfc6b;
 }
 
-.sobre-mim-grid-layout {
+.sobre-mim-grid-layout { //* Grid de sobre mim
   display: grid;
-  grid-template-columns: 320px 680px;
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: 320px 680px; /* 320px é a largura do cartão de perfil e 680px é a largura do bloco de quem sou eu */
+  column-gap: 20px; /* Espaço entre as colunas */
+  row-gap: 20px; /* Espaço entre as linhas */
   padding: 20px;
-  max-width: 1050px;
+  max-width: 1050px; /* Largura máxima do grid */
   /* height: 401px; */
-  margin: 40px auto;
-  justify-content: center;
-  align-items: start;
-  grid-template-rows: auto auto;
+  margin: 40px auto; /* Margem automática para centralizar o grid */
+  justify-content: center; /* Centraliza o grid horizontalmente */
+  align-items: start; /* Alinha os itens do grid verticalmente */
+  grid-template-rows: auto auto; /* Define o número de linhas do grid */
 }
 
-.sobre-mim-grid-layout p {
-  /* Se o p está logo abaixo do h1 e antes do main */
+.sobre-mim-grid-layout p { //* Parágrafo do grid de sobre mim
+  /* Se o p está logo abaixo do h1 e antes do main , fora isso ele quebra de novo*/
   color: #000000;
   text-align: center; /* Centraliza o texto */
   margin-bottom: 20px; /* Espaço abaixo */
 }
 
-.sobre-mim-grid-layout h2 {
+.sobre-mim-grid-layout h2 { //* Título do grid de sobre mim
   color: #000000;
 }
 
-.sobre-mim-grid-layout {
+.sobre-mim-grid-layout { //* Grid de sobre mim
   display: grid;
 
   grid-template-columns: auto auto;
 
-  column-gap: 21px;
-  row-gap: 28px;
+  column-gap: 21px; /* Espaço entre as colunas, conforme o modelo do figma */
+  row-gap: 28px; /* Espaço entre as linhas, conforme o modelo do figma  */
 
   padding: 20px;
   max-width: 1000px;
@@ -59,7 +59,7 @@
 
 /* ** Estilos para o Cartão de Perfil (#perfil-cartao-aboutme) ** */
 
-#perfil-cartao-aboutme {
+#perfil-cartao-aboutme { //* Cartão de perfil
   grid-column: 1;
   grid-row: 1;
 
@@ -75,28 +75,28 @@
   height: 404px;
 }
 
-#photo-aboutme {
+#photo-aboutme { //* Foto de perfil
   margin-top: -10px;
   width: 140px;
   border-radius: 50%;
 }
 
-#name-aboutme {
+#name-aboutme { //* Nome do perfil
   font-size: 15px;
   font-weight: 600;
 
   margin-top: 20px;
 }
 
-#perfil-cartao-aboutme p {
+#perfil-cartao-aboutme p { //* Descrição do perfil  
   margin-top: 20px;
 }
 
-#role-aboutme {
+#role-aboutme { //* Cargo do perfil
   color: #5d5d5d;
 }
 
-#perfil-cartao-aboutme ol {
+#perfil-cartao-aboutme ol { //* Lista de redes sociais
   list-style: none;
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@
   margin-top: 20px;
 }
 
-#perfil-cartao-aboutme ol li a {
+#perfil-cartao-aboutme ol li a { //* Link das redes sociais
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,39 +122,37 @@
   padding: 0;
 }
 
-.nav-block-about-me {
+.nav-block-about-me { //* Imagem do perfil
   width: 2028px;
   height: 28px;
-  object-fit: contain;
-  filter: none;
+  object-fit: contain; /* Mantém a proporção da imagem */
+  filter: none; /* Remove qualquer filtro de cor */
 }
 
-#perfil-cartao-aboutme ol li a:hover {
+#perfil-cartao-aboutme ol li a:hover { //* Hover das redes sociais
   background-color: #f3f4f6; /* Fundo um pouco mais claro/brilhante no hover */
 }
 
-#perfil-cartao-aboutme ol img {
+#perfil-cartao-aboutme ol img { //* Imagem das redes sociais
   width: 17px;
-
   gap: 20px;
 }
 
 /* Icone de localização */
-.cidade img {
+.cidade img { //* Imagem da cidade
   width: 12px;
 }
 
-.cidade {
+.cidade { //* Texto da cidade
   font-size: 13px;
 }
 
-p.cidade {
+p.cidade { //* Cor do texto da cidade
   color: #5d5d5d;
 }
 
-/*  BLOCO DE ESTATISTICAS  */
-
-#estatisticas-bloco-aboutme {
+/* * --- BLOCO DE ESTATISTICAS --- * */
+#estatisticas-bloco-aboutme { //* Bloco de estatísticas
   grid-column: 1;
   grid-row: 2;
   width: 317px;
@@ -166,13 +164,13 @@ p.cidade {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-#estatisticas-bloco-aboutme h2 {
+#estatisticas-bloco-aboutme h2 { //* Título do bloco de estatísticas  
   margin-bottom: 2vh;
   font-weight: 600;
   font-size: 18px;
 }
 
-#estatisticas-bloco-aboutme ul {
+#estatisticas-bloco-aboutme ul { //* Lista de estatísticas
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -182,24 +180,24 @@ p.cidade {
   padding: 0;
 }
 
-#estatisticas-bloco-aboutme ul li {
+#estatisticas-bloco-aboutme ul li { //* Item da lista de estatísticas
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#estatisticas-bloco-aboutme ul li:last-child {
+#estatisticas-bloco-aboutme ul li:last-child { //* Último item da lista de estatísticas
   border-bottom: none;
   padding-bottom: 0;
 }
 
-#estatisticas-bloco-aboutme .stat-label {
+#estatisticas-bloco-aboutme .stat-label { //* Label da estatística
   font-weight: normal;
   color: #555555;
 }
 
-#estatisticas-bloco-aboutme .stat-value {
+#estatisticas-bloco-aboutme .stat-value { //* Valor da estatística
   color: #000000;
   display: flex;
   align-items: center;
@@ -207,9 +205,8 @@ p.cidade {
 }
 
 /*  ABOUT ME -- MAIN */
-
 /* --- QUEM SOU EU --- */
-.quem-sou-eu {
+.quem-sou-eu { //* Bloco de quem sou eu
   grid-column: 2;
   grid-row: 1;
   background-color: #edeeef;
@@ -222,7 +219,7 @@ p.cidade {
   height: 317px;
 }
 
-.quem-sou-eu p {
+.quem-sou-eu p { //* Parágrafo do bloco de quem sou eu
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -231,10 +228,9 @@ p.cidade {
 
 /* HABILIDADES TECNICAS */
 
-.habilidades-tecnicas {
+.habilidades-tecnicas { //* Bloco de habilidades técnicas
   grid-column: 2; /* Ocupa a 2ª coluna */
   grid-row: 2; /* Ocupa a 2ª linha */
-  /* ** ADICIONE OS ESTILOS VISUAIS PARA O BLOCO AQUI ** */
   background-color: #edeeef;
 
   padding: 20px;
@@ -250,13 +246,13 @@ p.cidade {
   margin-top: -9.78vh;
 }
 
-.habilidades-tecnicas h2 {
+.habilidades-tecnicas h2 { //* Título do bloco de habilidades técnicas
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.habilidades-tecnicas ul {
+.habilidades-tecnicas ul { //* Lista de habilidades técnicas
   list-style: none;
   padding: 0;
   margin: 0;
@@ -265,20 +261,20 @@ p.cidade {
   gap: 8px;
 }
 
-.habilidades-tecnicas ul li {
+.habilidades-tecnicas ul li { //* Item da lista de habilidades técnicas 
   display: flex;
   flex-direction: column;
   font-size: 10px;
   color: #333;
 }
 
-.habilidades-tecnicas ul li span {
+.habilidades-tecnicas ul li span { //* Span da lista de habilidades técnicas
   color: black;
   font-size: 13px;
 }
 
-/* ** Container da Barra de Progresso e Porcentagem ** */
-.skill-level {
+/* * Container da Barra de Progresso e Porcentagem * */
+.skill-level { //* Container da barra de progresso e porcentagem
   display: flex;
   align-items: center;
   gap: 10px;
@@ -286,8 +282,8 @@ p.cidade {
   max-width: 100%;
 }
 
-/* ** Container da Barra de Progresso (fundo cinza claro) ** */
-.progress-bar-container {
+/* * Container da Barra de Progresso (fundo cinza claro) * */
+.progress-bar-container { //* Container da barra de progresso (fundo cinza claro)
   flex-grow: 1;
   height: 8px;
   background-color: #e0e0e0;
@@ -296,48 +292,47 @@ p.cidade {
 }
 
 /* ** Preenchimento da Barra de Progresso (fundo cinza escuro) ** */
-.progress-bar-fill {
+.progress-bar-fill { //* Preenchimento da barra de progresso (fundo cinza escuro)
   height: 100%;
   background-color: #333;
   border-radius: 4px;
 }
 
 /* ** Texto da Porcentagem ** */
-.percentage {
+.percentage { //* Texto da porcentagem
   font-size: 0.9em;
   font-weight: normal;
   color: #000000;
   white-space: nowrap;
 }
 
-/* ** RESPONSIVIDADE (Ajustes para telas menores) ** */
+/* ** RESPONSIVIDADE (Ajustes para telas menores) duplicado ** */
 @media (max-width: 768px) {
-  .skill-level {
+  .skill-level { //* Skill level
     width: 50%;
     max-width: 180px;
   }
-  .habilidades-tecnicas ul li {
+  .habilidades-tecnicas ul li { //* Item da lista de habilidades técnicas
     font-size: 1em;
   }
 }
 
 @media (max-width: 480px) {
-  .skill-level {
+  .skill-level { //* Skill level
     width: 45%;
     max-width: 150px;
     gap: 5px;
   }
-  .habilidades-tecnicas ul li {
+  .habilidades-tecnicas ul li { //* Item da lista de habilidades técnicas
     font-size: 0.9em;
   }
-  .percentage {
+  .percentage { //* Porcentagem
     font-size: 0.8em;
   }
 }
 
-/* INTERESSES E HOBBIES */
-
-.interesses-hobbies {
+/* * --- INTERESSES E HOBBIES --- * */
+.interesses-hobbies { //* Bloco de interesses e hobbies
   grid-column: 2;
   grid-row: 3;
   background-color: #edeeef;
@@ -354,14 +349,14 @@ p.cidade {
   margin-top: -7px;
 }
 
-.interesses-hobbies h2 {
+.interesses-hobbies h2 { //** Título do bloco de interesses e hobbies    
   font-weight: 500;
   font-size: 18px;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.hobbies-grid {
+.hobbies-grid { //* * Grid de hobbies
   list-style: none;
   padding: 0;
   margin: 0;
@@ -373,7 +368,7 @@ p.cidade {
   /* gap: 15px;  */
 }
 
-.hobby-item {
+.hobby-item { //* Item do grid de hobbies
   display: flex;
   align-items: center;
   gap: 10px;
@@ -382,7 +377,7 @@ p.cidade {
   text-decoration: none;
 }
 
-.hobby-icon-container {
+.hobby-icon-container { //* Container do ícone do hobby
   width: 32px;
   height: 32px;
   display: flex;
@@ -393,50 +388,50 @@ p.cidade {
   background-color: #f3f4f6;
 }
 
-.hobby-icon-container img {
+.hobby-icon-container img { //* Imagem do ícone do hobby
   width: 20px;
   height: 20px;
   object-fit: contain;
   filter: none;
 }
 
-.hobby-icon-container i {
+.hobby-icon-container i { //* Ícone do hobby
   font-size: 1.1em;
   color: #555;
 }
 
-.hobby-text-content {
+.hobby-text-content { //* Texto do hobby
   display: flex;
   flex-direction: column;
   margin: 0;
 }
 
-.hobby-text-content h4 {
+.hobby-text-content h4 { //* Título do hobby
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 14px;
   color: #333;
 }
 
-.hobby-text-content p {
+.hobby-text-content p { //* Descrição do hobby
   font-size: 0.8em;
   color: #666;
   margin: 0;
 }
 
-/* ** RESPONSIVIDADE ** */
+/* ** RESPONSIVIDADE ** duplicado */
 @media (max-width: 480px) {
-  .hobbies-grid {
+  .hobbies-grid { //* Grid de hobbies
     grid-template-columns: 1fr;
   }
-  .hobby-item {
+  .hobby-item { //* Item do grid de hobbies
     padding: 10px;
     font-size: 0.9em;
   }
 }
 
-/* VAMOS CONVERSAR */
-.vamos-conversar {
+/* * --- VAMOS CONVERSAR --- * */
+.vamos-conversar { //* Bloco de conversa
   display: flex;
   flex-direction: column;
   grid-column: 2;
@@ -449,26 +444,25 @@ p.cidade {
   margin-top: -7px;
 }
 
-.vamos-conversar h2 {
+.vamos-conversar h2 { //* Título do bloco de conversa 
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.vamos-conversar p {
+.vamos-conversar p { //* Parágrafo do bloco de conversa
   text-align: justify;
   font-size: 14px;
 }
 
 /* ** Container que agrupa os blocos de contato ** */
-/* Certifique-se que este container está no seu HTML, envolvendo todos os links de contato */
-.contact-info-block {
+.contact-info-block { //* Container de informações de contato
   display: flex;
   flex-direction: column; /* Coloca os blocos de contato um abaixo do outro */
 }
 
 /* ** Estilo para cada item de contato (o link <a>) ** */
-.contact-item {
+.contact-item { //* Item de contato
   display: flex;
   align-items: center;
   width: 619px;
@@ -476,20 +470,20 @@ p.cidade {
 
   border-radius: 8px;
   padding: 10px 15px;
-  text-decoration: none; /* Remove sublinhado do link */
-  color: #333; /* Cor do texto padrão para o bloco */
+  text-decoration: none; 
+  color: #333; /* Cor texto padrão  */
 
-  transition: all 0.3s ease; /* Transição suave para efeitos de hover */
-  /* height: 38px; (Não use fixed height se o padding já controla, ou use min-height) */
+  transition: all 0.3s ease; /** Transição suave para efeitos de hover */
+  /* height: 38px; */
 }
 
-.contact-item:hover {
+.contact-item:hover { //** Hover do item de contato
   background-color: #f3f4f6;
   transform: translateY(-2px); /* Efeito sutil de levantar */
 }
 
 /* ** Estilo para o container do Ícone da Esquerda ** */
-.contact-icon-left {
+.contact-icon-left { //* Container do ícone da esquerda
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,25 +491,25 @@ p.cidade {
   height: 24px; /* Altura do container do ícone */
   margin-right: 10px; /* Espaço entre o ícone esquerdo e o texto */
 }
-.contact-icon-left img {
-  width: 14px; /* Tamanho da imagem do ícone */
+.contact-icon-left img { //** Imagem do ícone da esquerda
+  width: 14px; 
   height: 14px;
   object-fit: contain;
   filter: none;
 }
 
 /* ** Estilo para o texto do contato (o e-mail, o telefone) ** */
-.contact-text {
+.contact-text { //* Texto do contato
   flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível entre os ícones */
   font-size: 0.9em;
-  color: #333; /* Cor do texto (escura) */
+  color: #333; 
   white-space: nowrap; /* Evita que o texto quebre linha */
   overflow: hidden; /* Esconde texto que excede o limite */
   text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
 }
 
 /* ** Estilo para o container do Ícone da Direita (link externo/share) ** */
-.contact-icon-right {
+.contact-icon-right { //* Container do ícone da direita
   display: flex;
   align-items: center;
   justify-content: center;
@@ -523,7 +517,7 @@ p.cidade {
   height: 20px;
   margin-left: 10px;
 }
-.contact-icon-right img {
+.contact-icon-right img { //* Imagem do ícone da direita
   width: 14px; /* Tamanho do ícone de link externo */
   height: 14px;
   object-fit: contain;

@@ -1,10 +1,14 @@
+// * SCRIPT PRINCIPAL - SITE SPA*
+// * Gerencia a navegação entre páginas sem recarregar o site
 document.addEventListener("DOMContentLoaded", () => {
-  const pageContentLoader = document.getElementById("dynamic-page");
+  // * ELEMENTOS DO DOM *
+  const pageContentLoader = document.getElementById("dynamic-page"); //* Aonde o conteúdo das páginas será carregado
   const allNavLinks = document.querySelectorAll(
-    "#navbar-lista-superior a, .nav-block"
+    "#navbar-lista-superior a, .nav-block" //* Todos os links de navegação (navbar superior e blocos de navegação)
   );
 
-  // ** MAPEA OS IDENTIFICADORES DO data-page PARA OS CAMINHOS REAIS DOS ARQUIVOS **
+  // ** MAPEIA OS IDENTIFICADORES PARA OS CAMINHOS DOS HTMLs **
+  // Cada identificador (data-page) corresponde ao caminho real do arquivo HTML
   const pagePaths = {
     home: "src/pages/home.html",
     formacao: "src/pages/formation.html",
@@ -14,14 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
     contacteme: "src/pages/contactMe.html",
   };
 
-  // * Rastrear a última página visitada *
-  let lastPageIdentifier = "";
-  const basePageTitle = "Meu Portfólio"; //título base
+  // * VARIÁVEIS DE CONTROLE *
+  let lastPageIdentifier = ""; // Armazena a última página visitada para lógica especial
+  const basePageTitle = "Meu Portfólio"; // Título base que aparecerá em todas as páginas
 
-  // * Função para carregar o conteúdo de uma página *
+  // * FUNÇÃO PRINCIPAL: CARREGAMENTO DE PÁGINAS *
+  // Recebe o identificador da página e carrega seu conteúdo dinamicamente
   async function loadPage(pageIdentifier) {
-    // * Agora recebe o identificador (ex: 'home', 'formacao') *
-    const filePath = pagePaths[pageIdentifier]; // * Pega o caminho real do arquivo pelo mapeamento *
+    // * VALIDA O CAMINHO *
+    const filePath = pagePaths[pageIdentifier]; // Obtém o caminho real do arquivo pelo mapeamento
 
     if (!filePath) {
       console.error(
@@ -32,16 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const response = await fetch(filePath); // * Usa o caminho real do arquivo *
+      // * CARREGAMENTO DO CONTEÚDO HTML *
+      const response = await fetch(filePath); // Faz requisição para o arquivo HTML
       if (!response.ok) {
         throw new Error(`Erro ao carregar ${filePath}: ${response.statusText}`);
       }
       const htmlContent = await response.text();
-      pageContentLoader.innerHTML = htmlContent;
+      pageContentLoader.innerHTML = htmlContent; // Insere o conteúdo
 
-      // * 1. * .active no navbar
-      // Marcador da navbar quando é selecionado
-      // remove a classe active que a tenha no momento
+      // * 1. ATUALIZAÇÃO DO ESTADO ATIVO NA NAVBAR *
+      // Remove a classe 'active' do item atualmente selecionado
       const currentActiveLi = document.querySelector(
         "#navbar-lista-superior li.active"
       );
@@ -49,68 +54,77 @@ document.addEventListener("DOMContentLoaded", () => {
         currentActiveLi.classList.remove("active");
       }
 
-      //adiciona a classe active
+      // Adiciona a classe 'active' ao novo item selecionado
       const newActiveLink = document.querySelector(
         `#navbar-lista-superior a[data-page="${pageIdentifier}"]`
       );
       if (newActiveLink && newActiveLink.parentElement.tagName === "LI") {
-        //adiciona a classe
         newActiveLink.parentElement.classList.add("active");
       }
       // ** Fim da lógica do active
 
-      // * 2. * Mudar título da aba do navegador
+      // * 2. ATUALIZAÇÃO DO TÍTULO DA ABA DO NAVEGADOR *
       let newTitle = "";
       if (pageIdentifier === "home") {
+        // Lógica especial para a página home
         if (lastPageIdentifier !== "home" && lastPageIdentifier !== "") {
-          //se está indo pra home e a página anterior era outra, mosta a mensagem especial
+          // Se está indo para home e a página anterior era outra, mostra mensagem especial
           newTitle = `Bem vindo(a) de volta à Home! | ${basePageTitle}`;
         } else {
-          newTitle = `Home | ${basePageTitle}`; //Primeira vez na home ou recarregou o site
+          // Primeira vez na home ou recarregou o site
+          newTitle = `Home | ${basePageTitle}`;
         }
       } else {
-        //primeira letra maiúscula
+        // Para outras páginas: primeira letra maiúscula + título base
         const capitalizedIdentifier =
           pageIdentifier.charAt(0).toUpperCase() + pageIdentifier.slice(1);
         newTitle = `${capitalizedIdentifier} | ${basePageTitle}`;
       }
 
-      document.title = newTitle; //atualiza o título
+      document.title = newTitle; // Atualiza o título da aba
 
-      lastPageIdentifier = pageIdentifier; //atualiza o lastpageidentifier depois do carregamento
+      // * ATUALIZAÇÃO DO CONTROLE DE HISTÓRICO *
+      lastPageIdentifier = pageIdentifier; // Atualiza o identificador da última página
 
-      // * Atualiza a URL do navegador sem recarregar a página *
+      // * ATUALIZAÇÃO DA URL DO NAVEGADOR *
+      // Modifica a URL sem recarregar a página
       history.pushState({ page: pageIdentifier }, "", `#${pageIdentifier}`);
     } catch (error) {
+      // * TRATAMENTO DE ERROS *
       console.error("Erro ao carregar a página:", error);
       pageContentLoader.innerHTML = `<p style="text-align: center; color: red;">Não foi possível carregar o conteúdo de ${pageIdentifier}.</p>`;
     }
   }
 
-  // * Adiciona event listeners aos links de navegação *
+  // * CONFIGURAÇÃO DOS EVENT LISTENERS PARA NAVEGAÇÃO *
+  // Adiciona listeners de clique em todos os links de navegação
   allNavLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault();
-      const pageIdentifier = link.dataset.page; // * Obtém o identificador do data-page *
-      loadPage(pageIdentifier);
+      event.preventDefault(); // Previne o comportamento padrão do link
+      const pageIdentifier = link.dataset.page; // Obtém o identificador do data-page
+      loadPage(pageIdentifier); // Carrega a página correspondente
     });
   });
 
-  // * Lida com a navegação pelo botão "Voltar/Avançar" do navegador *
+  // * NAVEGAÇÃO PELOS BOTÕES VOLTAR/AVANÇAR DO NAVEGADOR *
+  // Gerencia a navegação quando o usuário usa os botões do navegador
   window.addEventListener("popstate", (event) => {
-    const pageIdentifierFromHash = window.location.hash.substring(1);
+    const pageIdentifierFromHash = window.location.hash.substring(1); // Remove o '#' do hash
     if (pageIdentifierFromHash) {
-      loadPage(pageIdentifierFromHash);
+      loadPage(pageIdentifierFromHash); // Carrega a página do hash
     } else {
-      loadPage("home"); // *Carrega 'home' se não houver hash*
+      loadPage("home"); // Carrega 'home' se não houver hash
     }
   });
 
-  // * Carrega a página inicial ao carregar o site (baseado no hash ou Home padrão) *
+  // * CARREGAMENTO INICIAL DA PÁGINA *
+  // Determina qual página carregar quando o site é acessado pela primeira vez
   const initialPageIdentifier = window.location.hash.substring(1);
   if (initialPageIdentifier) {
+    // Se há um hash na URL, carrega a página correspondente
     loadPage(initialPageIdentifier);
   } else {
-    loadPage("home"); // * Carrega 'home' por padrão *
+    // Se não há hash, carrega a página home por padrão
+    loadPage("home");
   }
 });
