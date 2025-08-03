@@ -2,9 +2,36 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <!-- Meu nome como autor -->
+    <meta name="author" content="Jeferson Braine Leal">
+    <!-- Copyright -->
+    <meta name="copyright" content="© 2025 Jeferson Braine Leal">
+    <!-- Compatibilidade com navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Carrega recursos que serão usados em breve -->
+    <link rel="prefetch" href="/src/pages/aboutMe.html">
+    <link rel="prefetch" href="/src/pages/contactMe.html">
+    <link rel="prefetch" href="/src/pages/courses.html">
+    <link rel="prefetch" href="/src/pages/formation.html">
+    <link rel="prefetch" href="/src/pages/projects.html">
+    <!-- Descrição -->
+    <meta
+      name="description"
+      content="Conheça mais sobre mim, a minha carreira, as minhas formações, cursos e como aplico o meu conhecimento do Direito a Engenharia de Software"
+    />
+    <!-- inicio Meta tagas (OG) Open graph  -->
+    <meta property="og:title" content="Jeferson Braine Leal - Portfólio" />
+    <meta property="og:description" content="Conheça meu portfólio de Engenharia de Software e minha jornada de transição de carreira." />
+    <meta property="og:url" content="https://www.jefersonbraineleal.dev" />
+    <meta property="og:type" content="website" />
+  <!-- final Meta tagas (OG) Open graph  -->
     <link rel="shortcut icon" href="images/favicon/android-chrome-32x32.png" type="image/x-icon">
+    <!-- Realizar pré conexão ao site e informa a URL preferencial -->
+    <link rel="preconnect" href="https://www.jefersonbraineleal.dev" />
+    <link rel="canonical" href="https://www.jefersonbraineleal.dev">
     <title>Meu portfólio</title>
+    <!-- Todos os CSSs utilizados -->
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="src/styles/home.css" />
@@ -13,7 +40,9 @@
     <link rel="stylesheet" href="src/styles/projects.css">
     <link rel="stylesheet" href="src/styles/aboutme.css" />
     <link rel="stylesheet" href="src/styles/contactMe.css" />
+    <!-- css para as Animações -->
     <link rel="stylesheet" href="src/styles/animations.css" />
+    <!-- CSS de responsabilidade para telas diferentes -->
     <link rel="stylesheet" href="src/styles/mediaqueries.css"/>
   </head>
 
@@ -29,6 +58,7 @@
         alt="Logo com o meu nome Jeferson Braine"
         width="100px"
       />
+      <!-- Barra de navegação superior, que aparece em todas as páginas -->
       <nav id="navbar">
         <!-- * Navbar -->
         <ol id="navbar-lista-superior">
@@ -53,6 +83,7 @@
     </div>
 
     <!-- * Header * -->
+     <!-- Local aonde todo o conteúdo será carregado, desde a seção Home a seção Contacte-me -->
     <div id="dynamic-page"></div>
 
     <!-- * Footer * -->
@@ -60,6 +91,5 @@
       <p>© 2025 Jeferson Braine Leal — Todos os direitos reservados.</p>
     </footer>
   </body>
-
   <script src="src/scripts/main.js"></script>
 </html>
