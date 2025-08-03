@@ -1,5 +1,5 @@
 /* * --- RESET CSS --- * */
-//RESETA TODAS AS CONFIGURAÇÕES PADRÕES DO HTML
+/*RESETA TODAS AS CONFIGURAÇÕES PADRÕES DO HTML*/
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
 }
 
 /* * ESTILIZAÇÃO DA SELEÇÃO DE TEXTO * */
-//Define como o texto selecionado pelo usuário deve aparecer
+/**Define como o texto selecionado pelo usuário deve aparecer*/
 ::selection {
   background-color: #464646;
   color: #f2f0ef;

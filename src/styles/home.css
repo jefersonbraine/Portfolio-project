@@ -1,9 +1,9 @@
 /* * Header *  */
 
-#header-block { //** Container do header
+#header-block { /** Container do header*/
   position: relative;
 }
-#title-one { //** Título da esquerda
+#title-one { /** Título da esquerda*/
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 5vh;
   font-size: 160px;
@@ -11,7 +11,7 @@
 
   letter-spacing: 1.5vw;
 }
-#title-two { //** Título da direita
+#title-two { /** Título da direita*/
   font-family: Arial, Helvetica, sans-serif;
   float: right;
   font-size: 160px;
@@ -20,7 +20,7 @@
   letter-spacing: 1.5vw;
 }
 
-#button-contactme { //** Botão de contato
+#button-contactme { /** Botão de contato*/
   position: absolute;
   top: 5vh;
   left: 4.1vh;
@@ -38,7 +38,7 @@
   
 }
 
-#button-contactme p { //** Texto do botão de contato
+#button-contactme p { /** Texto do botão de contato*/
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -50,7 +50,7 @@
   transition: color 0.5s ease;
 }
 
-.arrow-container { //** Container do ícone do botão de contato
+.arrow-container { /** Container do ícone do botão de contato*/
   background-color: #edeeef;
   padding: 10px;
   border-radius: 50%;
@@ -59,25 +59,25 @@
   justify-content: center;
 }
 
-#button-contactme img { //** Ícone do botão de contato
+#button-contactme img { /** Ícone do botão de contato*/
   width: 45px;
   filter: invert(45%);
   transition: filter 0.7s ease;
 }
 
-#button-contactme:hover { //** Hover do botão de contato
+#button-contactme:hover { /** Hover do botão de contato*/
   transform: scale(1.1);
   color: #0d0d0d;
 }
 
-#button-contactme:hover p { //** Texto do botão de contato
+#button-contactme:hover p { /** Texto do botão de contato*/
   color: #0d0d0d;
 }
-#button-contactme:hover img { //** Ícone do botão de contato
+#button-contactme:hover img { /** Ícone do botão de contato*/
   filter: invert(0%);
 }
 
-#value-text { //** Texto do valor
+#value-text { /** Texto do valor*/
   font-family: Arial, sans-serif;
   color: #fcfcfc6b;
   font-size: 25px;
@@ -87,20 +87,20 @@
   max-width: 500px;
 }
 
-.font-weight { //** Texto do valor
+.font-weight { /** Texto do valor*/
   font-weight: 600;
   color: #f2f0efe0;
 }
 
 /* * Main * */
-#main-block { //** Container do main  
+#main-block { /** Container do main */ 
   margin: auto;
   padding: 40px 20px;
 
   margin-top: 50px;
 }
 
-.portfolio-navigation { //** Container do portfolio
+.portfolio-navigation { /** Container do portfolio*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -113,7 +113,7 @@
   margin-bottom: 3em;
 }
 
-.portfolio-navigation a { //** Link do portfolio
+.portfolio-navigation a { /** Link do portfolio*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,33 +128,33 @@
   transition: transform 0.5s ease, box-shadow 0.6s ease;
 }
 
-.portfolio-navigation a:hover { //** Hover do link do portfolio
+.portfolio-navigation a:hover { /** Hover do link do portfolio*/
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(226, 213, 213, 0.342);
   background-color: rgba(255, 255, 255, 0.062);
   border-color: rgba(255, 255, 255, 0.185);
 }
 
-.portfolio-navigation a:hover img { //** Ícone do link do portfolio
+.portfolio-navigation a:hover img { /** Ícone do link do portfolio*/
   transform: scale(1.3);
 }
 
-.portfolio-navigation img { //** Ícone do link do portfolio
+.portfolio-navigation img { /** Ícone do link do portfolio*/
   width: 3vh;
   filter: invert(1);
   transition: transform 0.5s ease, box-shadow 0.6s ease;
 }
 
-.portfolio-navigation img:hover { //** Hover do ícone do link do portfolio
+.portfolio-navigation img:hover { /** Hover do ícone do link do portfolio*/
   transform: scale(1.5);
 }
 
-.portfolio-navigation h3 { //** Título do link do portfolio
+.portfolio-navigation h3 { /** Título do link do portfolio*/
   font-size: 0.9em;
   margin-top: 1em;
 }
 
-.portfolio-navigation p { //** Parágrafo do link do portfolio
+.portfolio-navigation p { /** Parágrafo do link do portfolio*/
   color: #fcfcfc91;
   font-size: 0.8em;
   text-align: center;
@@ -164,7 +164,7 @@
 
 /* * NAV BLOCK * */
 
-.nav-block { //** Container do nav
+.nav-block { /** Container do nav*/
   display: flex;
   flex-direction: column;
   align-items: center;

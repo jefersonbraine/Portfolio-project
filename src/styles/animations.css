@@ -1,6 +1,6 @@
 
 /* * Animação background * */
-.animated-background { //* Container do background animado
+.animated-background { /** Container do background animado*/
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   z-index: -2;
   background-color: #0d0d0d;
 
-  animation: moveBackground 15s linear infinite; //* Animação do background
+  animation: moveBackground 15s linear infinite; /* Animação do background*/
 
   background-image: linear-gradient( /* Gradiente */
       90deg,

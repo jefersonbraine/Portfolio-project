@@ -2,25 +2,25 @@
 /* Estilos para a página de projetos do portfólio */
 
 #header-projects {
-  //** Container do header
+  /* Container do header */
   text-align: center;
 }
 
 #header-projects h1 {
-  //** Título do header
+  /* Título do header */
   font-size: 42px;
   font-weight: 400;
 }
 
 #header-projects p {
-  //** parágrafo do header
+  /* parágrafo do header */
   font-size: 17.5px;
   color: #fcfcfc6b;
 }
 
 /* * CONTAINER PRINCIPAL DA SEÇÃO * */
 .projects-section-wrapper {
-  //** Seção que involve a seção projetos
+  /* Seção que involve a seção projetos */
   max-width: 1046px;
   margin: 0 auto;
   padding: 20px;
@@ -28,7 +28,7 @@
 
 /* * TÍTULO DOS PROJETOS DESTACADOS * */
 .title-projects-highlighted {
-  //** Título do projetos destacados
+  /* Título do projetos destacados */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,7 +40,7 @@
 
 /* * SEÇÃO DOS CARDS GRANDES (PROJETOS DESTACADOS) * */
 .big-card-section {
-  //** Seção dos cards grandes
+  /* Seção dos cards grandes */
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -52,13 +52,13 @@
 
 /* * ÍCONE DO TÍTULO DOS PROJETOS DESTACADOS * */
 .title-projects-highlighted img {
-  //** ícone do título do projetos destacados
+  /* ícone do título do projetos destacados */
   width: 30px;
 }
 
 /* * CARD GRANDE DOS PROJETOS DESTACADOS * */
 .projects-highlighted-card {
-  //** Card grande dos projetos destacados
+  /* Card grande dos projetos destacados */
   background-color: #eeeff0;
   border-radius: 20px;
   padding: 20px;
@@ -76,13 +76,13 @@
 
 /* * ANIMAÇÃO DE HOVER NO CARD GRANDE * */
 .projects-highlighted-card:hover {
-  //** Animação de zoom do card grande dos projetos destacados
+  /* Animação de zoom do card grande dos projetos destacados */
   transform: scale(1.06);
 }
 
 /* * CONTAINER DA IMAGEM DO PROJETO * */
 .projects-img-header {
-  //** Container da imagem do projeto
+  /* Container da imagem do projeto */
   margin: -21px -21px 0 -21px; /* Margem negativa para quebrar o padding do card */
   position: relative;
   border-radius: 20px;
@@ -90,7 +90,7 @@
 
 /* * IMAGEM DO PROJETO * */
 .projects-img-header img {
-  //** Imagem do projeto
+  /* Imagem do projeto */
   width: 100%;
   height: 100%;
   object-fit: cover; /* Mantém proporção da imagem */
@@ -101,7 +101,7 @@
 
 /* * BADGE DE STATUS DO PROJETO * */
 .projects-status-badge {
-  //** Badge que indica o status do projeto (concluído, em andamento, etc.)
+  /* Badge que indica o status do projeto (concluído, em andamento, etc.) */
   position: absolute;
   top: 12px;
   right: 12px;
@@ -115,7 +115,7 @@
 
 /* * CABEÇALHO DO CARD (TÍTULO E DATA) * */
 .projects-card-header {
-  //** Container do cabeçalho do card com título e data
+  /* Container do cabeçalho do card com título e data */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,7 +123,7 @@
 
 /* * TÍTULO DO PROJETO * */
 .projects-title {
-  //** Título do projeto
+  /* Título do projeto */
   color: #000000;
   font-size: 15px;
   font-weight: 400;
@@ -134,7 +134,7 @@
 
 /* * DATA DO PROJETO * */
 .projects-data {
-  //** Data do projeto
+  /* Data do projeto */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,14 +148,14 @@
 
 /* * ÍCONE DA DATA * */
 .projects-data img {
-  //** Ícone da data do projeto
+  /* Ícone da data do projeto */
   width: 14px;
   filter: invert(45%); /* Escurece o ícone */
 }
 
 /* * DESCRIÇÃO DO PROJETO * */
 .projects-description {
-  //** Descrição do projeto
+  /* Descrição do projeto */
   font-size: 0.9em;
   color: #585f6d;
   line-height: 1.4;
@@ -164,7 +164,7 @@
 
 /* * LINK EXTERNO DO DEMO * */
 .demo-external-link {
-  //** Link externo para o demo do projeto
+  /* Link externo para o demo do projeto */
   display: flex;
   align-items: center;
   gap: 6px;
@@ -173,19 +173,19 @@
 
 /* * ÍCONE DO LINK EXTERNO * */
 .demo-external-link img {
-  //** Ícone do link externo
+  /* Ícone do link externo */
   width: 14px;
 }
 
 /* * QUANTIDADE DE COLABORADORES * */
 .amount-colaborators {
-  //** Quantidade de colaboradores no projeto
+  /* Quantidade de colaboradores no projeto */
   color: #6b7280;
 }
 
 /* * CONTAINER DAS BADGES DE TECNOLOGIA * */
 .badges {
-  //** Container das badges de tecnologia usadas no projeto
+  /* Container das badges de tecnologia usadas no projeto */
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -196,7 +196,7 @@
 
 /* * BADGE INDIVIDUAL DE TECNOLOGIA * */
 .technology-badge {
-  //** Badge individual de tecnologia
+  /* Badge individual de tecnologia */
   background-color: #e5e7eb;
   color: #384152;
   padding: 4px 10px;
@@ -207,7 +207,7 @@
 
 /* * CONTAINER DOS BOTÕES DE ACESSO * */
 .projects-buttons-access {
-  //** Container dos botões de acesso (demo e código)
+  /* Container dos botões de acesso (demo e código) */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -215,7 +215,7 @@
 
 /* * BOTÃO VER DEMO * */
 .view-demo-button {
-  //** Botão para ver o demo do projeto
+  /* Botão para ver o demo do projeto */
   display: flex;
   flex: 1;
   align-items: center;
@@ -233,7 +233,7 @@
 
 /* * BOTÃO VER CÓDIGO * */
 .view-code-button {
-  //** Botão para ver o código do projeto
+  /* Botão para ver o código do projeto */
   display: flex;
   flex: 1;
   align-items: center;
@@ -255,19 +255,19 @@
 
 /* * HOVER DO BOTÃO DEMO * */
 .view-demo-button:hover {
-  //** Efeito hover do botão demo
+  /* Efeito hover do botão demo */
   background-color: #334155;
 }
 
 /* * HOVER DO BOTÃO CÓDIGO * */
 .view-code-button:hover {
-  //** Efeito hover do botão código
+  /* Efeito hover do botão código */
   background-color: #eeeff0;
 }
 
 /* * ÍCONE DO CÓDIGO (VERSÃO ESCURA) * */
 .view-code-icon-dark {
-  //** Ícone do código versão escura
+  /* Ícone do código versão escura */
   width: 14px;
   height: 14px;
   filter: invert(0); /* Mantém cor original */
@@ -275,7 +275,7 @@
 
 /* * ÍCONE DO CÓDIGO (VERSÃO CLARA) * */
 .view-code-icon-light {
-  //** Ícone do código versão clara
+  /* Ícone do código versão clara */
   width: 14px;
   height: 14px;
   filter: invert(1); /* Inverte as cores */
@@ -283,7 +283,7 @@
 
 /* * BADGE DE STATUS - PROJETO CONCLUÍDO (VERDE) * */
 .projects-status-badge.status-completed-green {
-  //** Badge para projeto concluído (verde)
+  /* Badge para projeto concluído (verde) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,7 +298,7 @@
 
 /* * BADGE DE STATUS - PROJETO EM ANDAMENTO (AMARELO) * */
 .projects-status-badge.status-doing-yellow {
-  //** Badge para projeto em andamento (amarelo)
+  /* Badge para projeto em andamento (amarelo) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,7 +313,7 @@
 
 /* * SEÇÃO DOS CARDS PEQUENOS (TODOS OS PROJETOS) * */
 .mini-card-section {
-  //** Seção dos cards pequenos para todos os projetos
+  /* Seção dos cards pequenos para todos os projetos */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -325,13 +325,13 @@
 
 /* * ÍCONE DO TÍTULO DOS PROJETOS DESTACADOS (REPETIDO) * */
 .title-projects-highlighted img {
-  //** Ícone do título dos projetos destacados (repetido)
+  /* Ícone do título dos projetos destacados (repetido) */
   width: 30px;
 }
 
 /* * CARD PEQUENO DE TODOS OS PROJETOS * */
 .all-projects-card {
-  //** Card pequeno para todos os projetos
+  /* Card pequeno para todos os projetos */
   background-color: #eeeff0;
   border-radius: 20px;
   padding: 20px;
@@ -348,13 +348,13 @@
 
 /* * ANIMAÇÃO DE HOVER NO CARD PEQUENO * */
 .all-projects-card:hover {
-  //** Animação de hover no card pequeno
+  /* Animação de hover no card pequeno */
   transform: scale(1.06);
 }
 
 /* * CONTAINER DA IMAGEM DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-img-header {
-  //** Container da imagem do projeto (repetido para cards pequenos)
+  /* Container da imagem do projeto (repetido para cards pequenos) */
   margin: -21px -21px 0 -21px;
   position: relative;
   border-radius: 20px;
@@ -362,7 +362,7 @@
 
 /* * IMAGEM DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-img-header img {
-  //** Imagem do projeto (repetido para cards pequenos)
+  /* Imagem do projeto (repetido para cards pequenos) */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -373,7 +373,7 @@
 
 /* * BADGE DE STATUS DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-status-badge {
-  //** Badge de status do projeto (repetido para cards pequenos)
+  /* Badge de status do projeto (repetido para cards pequenos) */
   position: absolute;
   top: 12px;
   right: 12px;
@@ -387,7 +387,7 @@
 
 /* * CABEÇALHO DO CARD (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-card-header {
-  //** Cabeçalho do card (repetido para cards pequenos)
+  /* Cabeçalho do card (repetido para cards pequenos) */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -395,7 +395,7 @@
 
 /* * TÍTULO DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-title {
-  //** Título do projeto (repetido para cards pequenos)
+  /* Título do projeto (repetido para cards pequenos) */
   color: #000000;
   font-size: 15px;
   font-weight: 400;
@@ -406,7 +406,7 @@
 
 /* * DATA DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-data {
-  //** Data do projeto (repetido para cards pequenos)
+  /* Data do projeto (repetido para cards pequenos) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,14 +420,14 @@
 
 /* * ÍCONE DA DATA (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-data img {
-  //** Ícone da data (repetido para cards pequenos)
+  /* Ícone da data (repetido para cards pequenos) */
   width: 14px;
   filter: invert(45%);
 }
 
 /* * DESCRIÇÃO DO PROJETO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-description {
-  //** Descrição do projeto (repetido para cards pequenos)
+  /* Descrição do projeto (repetido para cards pequenos) */
   font-size: 0.9em;
   color: #585f6d;
   line-height: 1.4;
@@ -436,7 +436,7 @@
 
 /* * LINK EXTERNO DO DEMO (REPETIDO PARA CARDS PEQUENOS) * */
 .demo-external-link {
-  //** Link externo do demo (repetido para cards pequenos)
+  /* Link externo do demo (repetido para cards pequenos) */
   display: flex;
   align-items: center;
   gap: 6px;
@@ -445,19 +445,19 @@
 
 /* * ÍCONE DO LINK EXTERNO (REPETIDO PARA CARDS PEQUENOS) * */
 .demo-external-link img {
-  //** Ícone do link externo (repetido para cards pequenos)
+  /* Ícone do link externo (repetido para cards pequenos) */
   width: 14px;
 }
 
 /* * QUANTIDADE DE COLABORADORES (REPETIDO PARA CARDS PEQUENOS) * */
 .amount-colaborators {
-  //** Quantidade de colaboradores (repetido para cards pequenos)
+  /* Quantidade de colaboradores (repetido para cards pequenos) */
   color: #6b7280;
 }
 
 /* * CONTAINER DAS BADGES DE TECNOLOGIA (REPETIDO PARA CARDS PEQUENOS) * */
 .badges {
-  //** Container das badges de tecnologia (repetido para cards pequenos)
+  /* Container das badges de tecnologia (repetido para cards pequenos) */
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -468,7 +468,7 @@
 
 /* * BADGE INDIVIDUAL DE TECNOLOGIA (REPETIDO PARA CARDS PEQUENOS) * */
 .technology-badge {
-  //** Badge individual de tecnologia (repetido para cards pequenos)
+  /* Badge individual de tecnologia (repetido para cards pequenos) */
   background-color: #e5e7eb;
   color: #384152;
   padding: 4px 10px;
@@ -479,7 +479,7 @@
 
 /* * CONTAINER DOS BOTÕES DE ACESSO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-buttons-access {
-  //** Container dos botões de acesso (repetido para cards pequenos)
+  /* Container dos botões de acesso (repetido para cards pequenos) */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -487,7 +487,7 @@
 
 /* * BOTÃO VER DEMO (REPETIDO PARA CARDS PEQUENOS) * */
 .view-demo-button {
-  //** Botão ver demo (repetido para cards pequenos)
+  /* Botão ver demo (repetido para cards pequenos) */
   display: flex;
   flex: 1;
   align-items: center;
@@ -505,7 +505,7 @@
 
 /* * BOTÃO VER CÓDIGO (REPETIDO PARA CARDS PEQUENOS) * */
 .view-code-button {
-  //** Botão ver código (repetido para cards pequenos)
+  /* Botão ver código (repetido para cards pequenos) */
   display: flex;
   flex: 1;
   align-items: center;
@@ -527,19 +527,19 @@
 
 /* * HOVER DO BOTÃO DEMO (REPETIDO PARA CARDS PEQUENOS) * */
 .view-demo-button:hover {
-  //** Hover do botão demo (repetido para cards pequenos)
+  /* Hover do botão demo (repetido para cards pequenos) */
   background-color: #334155;
 }
 
 /* * HOVER DO BOTÃO CÓDIGO (REPETIDO PARA CARDS PEQUENOS) * */
 .view-code-button:hover {
-  //** Hover do botão código (repetido para cards pequenos)
+  /* Hover do botão código (repetido para cards pequenos) */
   background-color: #eeeff0;
 }
 
 /* * ÍCONE DO CÓDIGO - VERSÃO ESCURA (REPETIDO PARA CARDS PEQUENOS) * */
 .view-code-icon-dark {
-  //** Ícone do código versão escura (repetido para cards pequenos)
+  /* Ícone do código versão escura (repetido para cards pequenos) */
   width: 14px;
   height: 14px;
   filter: invert(0);
@@ -547,7 +547,7 @@
 
 /* * ÍCONE DO CÓDIGO - VERSÃO CLARA (REPETIDO PARA CARDS PEQUENOS) * */
 .view-code-icon-light {
-  //** Ícone do código versão clara (repetido para cards pequenos)
+  /* Ícone do código versão clara (repetido para cards pequenos) */
   width: 14px;
   height: 14px;
   filter: invert(1);
@@ -555,7 +555,7 @@
 
 /* * BADGE DE STATUS - PROJETO CONCLUÍDO VERDE (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-status-badge.status-completed-green {
-  //** Badge projeto concluído verde (repetido para cards pequenos)
+  /* Badge projeto concluído verde (repetido para cards pequenos) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,7 +570,7 @@
 
 /* * BADGE DE STATUS - PROJETO EM ANDAMENTO AMARELO (REPETIDO PARA CARDS PEQUENOS) * */
 .projects-status-badge.status-doing-yellow {
-  //** Badge projeto em andamento amarelo (repetido para cards pequenos)
+  /* Badge projeto em andamento amarelo (repetido para cards pequenos) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,7 +585,7 @@
 
 /* * BADGE DE STATUS - PROJETO PARADO VERMELHO * */
 .projects-status-badge.status-stoped-yellow {
-  //** Badge para projeto parado (vermelho)
+  /* Badge para projeto parado (vermelho) */
   display: flex;
   align-items: center;
   justify-content: center;
