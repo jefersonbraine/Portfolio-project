@@ -97,12 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // * CONFIGURAÇÃO DOS EVENT LISTENERS PARA NAVEGAÇÃO *
-  // Adiciona listeners de clique em todos os links de navegação
-  allNavLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault(); // Previne o comportamento padrão do link
-      const pageIdentifier = link.dataset.page; // Obtém o identificador do data-page
-      loadPage(pageIdentifier); // Carrega a página correspondente
+  // Adiciona listeners de clique nos elementos li da navbar
+  const navbarItems = document.querySelectorAll("#navbar-lista-superior li");
+  navbarItems.forEach((li) => {
+    li.addEventListener("click", (event) => {
+      event.preventDefault(); // Previne o comportamento padrão
+      const link = li.querySelector("a"); // Encontra o link dentro do li
+      if (link) {
+        const pageIdentifier = link.dataset.page; // Obtém o identificador do data-page
+        loadPage(pageIdentifier); // Carrega a página correspondente
+      }
     });
   });
 
