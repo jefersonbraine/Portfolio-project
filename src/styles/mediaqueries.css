@@ -1,5 +1,538 @@
 /* * --- Media Queries --- * */
 
+/*** ---------- Desktop / Laptop (max-width: 1804px) ---------- ***/
+@media (max-width: 1804px) {
+  /*** Home Section ***/
+  #title-one,
+  #title-two {
+    font-size: 9vw;
+    letter-spacing: 1vw;
+  }
+  #button-contactme {
+    /** Botão de contato*/
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 75%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0; 
+    gap: 10px;
+  }
+
+  #button-contactme p {
+    font-size: 30px;
+  }
+  #button-contactme img {
+    width: 35px;
+  }
+  #value-text {
+    font-size: 25px;
+    margin-left: 15vh;
+    max-width: 500px;
+  }
+  .portfolio-navigation a {
+    width: 200px;
+    height: 170px;
+  }
+
+  /*** About Me Section ***/
+  .sobre-mim-grid-layout {
+    max-width: 900px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 15px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme {
+    width: 100%;
+  }
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+  }
+  .contact-item {
+    width: 100%;
+  }
+
+  /*** Contact Me Section ***/
+  .contact-grid-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+  #contact-info-block,
+  #why-work-with-me {
+    width: auto;
+    height: auto;
+  }
+  #send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  #alternative-contact {
+    width: auto;
+    grid-column: 1 / span 2;
+  }
+
+  /*** Formation Section ***/
+  .academic-history-section,
+  .merits-section {
+    max-width: 900px;
+  }
+  .academic-card {
+    width: 600px;
+  }
+  .merits-item {
+    width: 200px;
+    padding: 20px 30px;
+  }
+
+  /*** Courses Section ***/
+  .courses-section {
+    max-width: 900px;
+  }
+  .course-card {
+    width: calc((100% - (2 * 20px)) / 2);
+  }
+
+  .course-card p {
+    font-size: 14px;
+  }
+  .achievement-item {
+    width: 220px;
+    padding: 20px 30px;
+  }
+
+  /*** Projects Section ***/
+  .projects-section-wrapper {
+    max-width: 900px;
+  }
+  .big-card-section {
+    gap: 20px;
+  }
+  .projects-highlighted-card {
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+  .mini-card-section {
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: calc(33.333% - 10px);
+    height: auto;
+  }
+
+  /*** Navbar ***/
+  #navbar-lista-superior {
+    padding: 10px 20px;
+    gap: 8px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.9em;
+  }
+}
+
+
+/*** ---------- Desktop / Laptop (max-width: 1544px) ---------- ***/
+@media (max-width: 1544px) {
+  /*** Home Section ***/
+  #title-one,
+  #title-two {
+    font-size: 9vw;
+    letter-spacing: 1vw;
+  }
+  #button-contactme {
+    /** Botão de contato*/
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 75%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0; 
+    gap: 10px;
+  }
+
+  #button-contactme p {
+    font-size: 20px;
+  }
+  #button-contactme img {
+    width: 20px;
+  }
+  #value-text {
+    font-size: 20px;
+    margin-left: 10vh;
+    max-width: 400px;
+  }
+  .portfolio-navigation a {
+    width: 200px;
+    height: 170px;
+  }
+
+  /*** About Me Section ***/
+  .sobre-mim-grid-layout {
+    max-width: 900px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 15px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme {
+    width: 100%;
+  }
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+  }
+  .contact-item {
+    width: 100%;
+  }
+
+  /*** Contact Me Section ***/
+  .contact-grid-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+  #contact-info-block,
+  #why-work-with-me {
+    width: auto;
+    height: auto;
+  }
+  #send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  #alternative-contact {
+    width: auto;
+    grid-column: 1 / span 2;
+  }
+
+  /*** Formation Section ***/
+  .academic-history-section,
+  .merits-section {
+    max-width: 900px;
+  }
+  .academic-card {
+    width: 600px;
+  }
+  .merits-item {
+    width: 200px;
+    padding: 20px 30px;
+  }
+
+  /*** Courses Section ***/
+  .courses-section {
+    max-width: 900px;
+  }
+  .course-card {
+    width: calc((100% - (2 * 20px)) / 2);
+  }
+
+  .course-card p {
+    font-size: 14px;
+  }
+  .achievement-item {
+    width: 220px;
+    padding: 20px 30px;
+  }
+
+  /*** Projects Section ***/
+  .projects-section-wrapper {
+    max-width: 900px;
+  }
+  .big-card-section {
+    gap: 20px;
+  }
+  .projects-highlighted-card {
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+  .mini-card-section {
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: calc(33.333% - 10px);
+    height: auto;
+  }
+
+  /*** Navbar ***/
+  #navbar-lista-superior {
+    padding: 10px 20px;
+    gap: 8px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.9em;
+  }
+}
+
+/* Desktop / Laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /*** Home Section ***/
+  #title-one,
+  #title-two {
+    font-size: 80px;
+    letter-spacing: 1vw;
+  }
+  #button-contactme {
+    position: absolute;
+    z-index: 2;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0;
+  }
+
+  #button-contactme p {
+    font-size: 20px;
+  }
+  #button-contactme img {
+    width: 20px;
+  }
+  #value-text {
+    font-size: 20px;
+    margin-left: 10vh;
+    max-width: 400px;
+  }
+  .portfolio-navigation a {
+    width: 200px;
+    height: 170px;
+  }
+
+  /*** About Me Section ***/
+  .sobre-mim-grid-layout {
+    max-width: 900px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 15px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme {
+    width: 100%;
+  }
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+  }
+  .contact-item {
+    width: 100%;
+  }
+
+  /*** Contact Me Section ***/
+  .contact-grid-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+  #contact-info-block,
+  #why-work-with-me {
+    width: auto;
+    height: auto;
+  }
+  #send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  #alternative-contact {
+    width: auto;
+    grid-column: 1 / span 2;
+  }
+
+  /*** Formation Section ***/
+  .academic-history-section,
+  .merits-section {
+    max-width: 900px;
+  }
+  .academic-card {
+    width: 600px;
+  }
+  .merits-item {
+    width: 200px;
+    padding: 20px 30px;
+  }
+
+  /*** Courses Section ***/
+  .courses-section {
+    max-width: 900px;
+  }
+  .course-card {
+    width: calc((100% - (2 * 20px)) / 2);
+  }
+
+  .course-card p {
+    font-size: 14px;
+  }
+  .achievement-item {
+    width: 220px;
+    padding: 20px 30px;
+  }
+
+  /*** Projects Section ***/
+  .projects-section-wrapper {
+    max-width: 900px;
+  }
+  .big-card-section {
+    gap: 20px;
+  }
+  .projects-highlighted-card {
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+  .mini-card-section {
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: calc(33.333% - 10px);
+    height: auto;
+  }
+
+  /*** Navbar ***/
+  #navbar-lista-superior {
+    padding: 10px 20px;
+    gap: 8px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.9em;
+  }
+}
+
+/*** ---------- Desktop / Laptop (max-width: 1284px) ---------- ***/
+@media (max-width: 1284px) {
+  /*** Home Section ***/
+  #title-one,
+  #title-two {
+    font-size: 10vw;
+    letter-spacing: 1vw;
+  }
+  #button-contactme {
+    position: absolute;
+    z-index: 2;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    margin-left: 0;
+  }
+
+  #button-contactme p {
+    font-size: 20px;
+  }
+  #button-contactme img {
+    width: 20px;
+  }
+  #value-text {
+    font-size: 20px;
+    margin-left: 10vh;
+    max-width: 400px;
+  }
+  .portfolio-navigation a {
+    width: 200px;
+    height: 170px;
+  }
+
+  /*** About Me Section ***/
+  .sobre-mim-grid-layout {
+    max-width: 900px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 15px;
+  }
+  #perfil-cartao-aboutme,
+  #estatisticas-bloco-aboutme {
+    width: 100%;
+  }
+  .quem-sou-eu,
+  .habilidades-tecnicas,
+  .interesses-hobbies,
+  .vamos-conversar {
+    width: 100%;
+  }
+  .contact-item {
+    width: 100%;
+  }
+
+  /*** Contact Me Section ***/
+  .contact-grid-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+  #contact-info-block,
+  #why-work-with-me {
+    width: auto;
+    height: auto;
+  }
+  #send-message-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  #alternative-contact {
+    width: auto;
+    grid-column: 1 / span 2;
+  }
+
+  /*** Formation Section ***/
+  .academic-history-section,
+  .merits-section {
+    max-width: 900px;
+  }
+  .academic-card {
+    width: 600px;
+  }
+  .merits-item {
+    width: 200px;
+    padding: 20px 30px;
+  }
+
+  /*** Courses Section ***/
+  .courses-section {
+    max-width: 900px;
+  }
+  .course-card {
+    width: calc((100% - (2 * 20px)) / 2);
+  }
+
+  .course-card p {
+    font-size: 14px;
+  }
+  .achievement-item {
+    width: 220px;
+    padding: 20px 30px;
+  }
+
+  /*** Projects Section ***/
+  .projects-section-wrapper {
+    max-width: 900px;
+  }
+  .big-card-section {
+    gap: 20px;
+  }
+  .projects-highlighted-card {
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+  .mini-card-section {
+    gap: 15px;
+  }
+  .all-projects-card {
+    max-width: calc(33.333% - 10px);
+    height: auto;
+  }
+
+  /*** Navbar ***/
+  #navbar-lista-superior {
+    padding: 10px 20px;
+    gap: 8px;
+  }
+  #navbar-lista-superior li {
+    font-size: 0.9em;
+  }
+}
+
 /* Desktop / Laptop (max-width: 1024px) */
 @media (max-width: 1024px) {
   /*** Home Section ***/
@@ -380,10 +913,11 @@
   }
 
   #button-contactme p {
-    font-size: 13px;
+    font-size: 20px;
+    white-space: nowrap;
   }
   #button-contactme img {
-    width: 13px;
+    width: 20px;
   }
   #value-text {
     font-size: 16px;
@@ -521,5 +1055,6 @@
 
   footer {
     font-size: 12px;
+    white-space: nowrap;
   }
 }
