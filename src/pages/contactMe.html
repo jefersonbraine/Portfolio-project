@@ -46,7 +46,10 @@
         <div class="contactMe-item">
           <!-- Ícone de localização -->
           <div class="icon-contactme-background">
-            <img src="images/icons/locationIcon.png" alt="Ícone de localização" />
+            <img
+              src="images/icons/locationIcon.png"
+              alt="Ícone de localização"
+            />
           </div>
           <div>
             <h4>Localização</h4>
@@ -102,21 +105,39 @@
   <!-- Seção do formulário de envio de mensagem -->
   <section id="send-message-form">
     <h2>Envie uma mensagem</h2>
-    <form>
+    <!-- Formulário com ID para manipulação JavaScript -->
+    <form id="contact-form">
       <!-- Campo: Nome -->
       <div class="form-group">
         <label for="name">Nome *</label>
-        <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome completo"
+          required
+        />
       </div>
       <!-- Campo: Email -->
       <div class="form-group">
         <label for="email">Email *</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seu@email.com"
+          required
+        />
       </div>
       <!-- Campo: Telefone -->
       <div class="form-group">
         <label for="phone">Telefone</label>
-        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(99) 99999-9999"
+        />
       </div>
       <!-- Campo: Prioridade -->
       <div class="form-group">
@@ -130,17 +151,31 @@
       <!-- Campo: Assunto -->
       <div class="form-group full-width">
         <label for="subject">Assunto *</label>
-        <input type="text" id="subject" name="subject" placeholder="Sobre o que você gostaria de falar?" required />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Sobre o que você gostaria de falar?"
+          required
+        />
       </div>
       <!-- Campo: Mensagem -->
       <div class="form-group full-width">
         <label for="message">Mensagem *</label>
-        <textarea id="message" name="message" rows="5" placeholder="Conte-me mais sobre seu projeto ou ideia..." maxlength="500" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Conte-me mais sobre seu projeto ou ideia..."
+          maxlength="500"
+          required
+        ></textarea>
         <p class="char-count">0/500 caracteres</p>
       </div>
       <!-- Botão de envio do formulário -->
       <button type="submit" class="send-message-button">
-        <img src="images/icons/sendIcon.png" alt="Ícone de enviar" /> Enviar Mensagem
+        <img src="images/icons/sendIcon.png" alt="Ícone de enviar" /> Enviar
+        Mensagem
       </button>
     </form>
   </section>
@@ -155,9 +190,24 @@
     </p>
     <!-- Links para redes sociais -->
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/jefersonbraineleal" target="_blank" class="social-button">LinkedIn</a>
-      <a href="https://wa.me/5541996501459" target="_blank" class="social-button">WhatsApp</a>
-      <a href="https://github.com/jefersonbraine" target="_blank" class="social-button">GitHub</a>
+      <a
+        href="https://www.linkedin.com/in/jefersonbraineleal"
+        target="_blank"
+        class="social-button"
+        >LinkedIn</a
+      >
+      <a
+        href="https://wa.me/5541996501459"
+        target="_blank"
+        class="social-button"
+        >WhatsApp</a
+      >
+      <a
+        href="https://github.com/jefersonbraine"
+        target="_blank"
+        class="social-button"
+        >GitHub</a
+      >
     </div>
   </section>
 </main>

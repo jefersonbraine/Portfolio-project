@@ -81,7 +81,27 @@ document.addEventListener("DOMContentLoaded", () => {
         newTitle = `${capitalizedIdentifier} | ${basePageTitle}`;
       }
 
+      // * 3. CONFIGURAÇÃO DO FORMULÁRIO DE CONTATO*
       document.title = newTitle; // Atualiza o título da aba
+
+      if (pageIdentifier === "contacteme") {
+        const form = document.getElementById("contact-form");
+        if (form) {
+          // Remove listeners anteriores para evitar duplicação
+          const newForm = form.cloneNode(true);
+          form.replaceWith(newForm);
+
+          // Adiciona listener para o evento de submissão
+          newForm.addEventListener("submit", function (event) {
+            // Impede o comportamento padrão de envio do formulário
+            event.preventDefault();
+            // Exibe o alerta
+            alert(
+              "O envio do formulário ainda está sendo implementado. Por favor, entre em contato por outros meios."
+            );
+          });
+        }
+      }
 
       // * ATUALIZAÇÃO DO CONTROLE DE HISTÓRICO *
       lastPageIdentifier = pageIdentifier; // Atualiza o identificador da última página
@@ -132,3 +152,5 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPage("home");
   }
 });
+
+
