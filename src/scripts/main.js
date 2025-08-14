@@ -93,13 +93,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Adiciona listener para o evento de submissão
           newForm.addEventListener("submit", function (event) {
-            // Impede o comportamento padrão de envio do formulário
             event.preventDefault();
-            // Exibe o alerta
             alert(
               "O envio do formulário ainda está sendo implementado. Por favor, entre em contato por outros meios."
             );
           });
+
+          // * CONFIGURAÇÃO DO CONTADOR DE CARACTERES * (NOVO)
+          const textarea = newForm.querySelector("#message");
+          const charCount = newForm.querySelector("#char-count");
+          if (textarea && charCount) {
+            // Atualiza o contador ao carregar a página
+            charCount.textContent = `${textarea.value.length}/500 caracteres`;
+
+            // Adiciona listener para atualizar o contador em tempo real
+            textarea.addEventListener("input", function () {
+              charCount.textContent = `${textarea.value.length}/500 caracteres`;
+            });
+          }
         }
       }
 

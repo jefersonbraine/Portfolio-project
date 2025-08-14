@@ -106,7 +106,7 @@
   <section id="send-message-form">
     <h2>Envie uma mensagem</h2>
     <!-- Formulário com ID para manipulação JavaScript -->
-    <form action="https://formsubmit.co/jefersonbraineleal@gmail.com" method="post">
+    <form id="contact-form" action="https://formsubmit.co/jefersonbraineleal@gmail.com" method="post">
       <!-- Campo: Nome -->
       <div class="form-group">
         <label for="name">Nome *</label>
@@ -170,7 +170,7 @@
           maxlength="500"
           required
         ></textarea>
-        <p class="char-count">0/500 caracteres</p>
+        <p id="char-count" class="char-count">0/500 caracteres</p>
       </div>
       <!-- Botão de envio do formulário -->
       <button type="submit" class="send-message-button">
