@@ -1,300 +1,374 @@
 /* * --- CONTACT-ME SECTION --- * */
 
-#header-contactMe { /** Container do header*/
+#header-contactMe {
+  /** Container do header*/
   text-align: center;
 }
 
-#header-contactMe h1 { /** Título do header*/
+#header-contactMe h1 {
+  /** Título do header*/
   font-size: 42px;
   font-weight: 400;
 }
 
-#header-contactMe P { /** Parágrafo do header*/
+#header-contactMe P {
+  /** Parágrafo do header*/
   font-size: 17.5px;
   color: #fcfcfc6b;
-  
 }
 
-.contact-grid-layout { /** Container do grid*/
-    display: grid;
-    grid-template-columns: 320px 680px;
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    max-width: 1050px; 
-    /* height: 401px; */
-    margin: 40px auto; 
-    justify-content: center;
-    align-items: start; 
-    grid-template-rows: auto auto;
+.contact-grid-layout {
+  /** Container do grid*/
+  display: grid;
+  grid-template-columns: 320px 680px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+  max-width: 1050px;
+  /* height: 401px; */
+  margin: 40px auto;
+  justify-content: center;
+  align-items: start;
+  grid-template-rows: auto auto;
 }
 
 /** Base style for all content sections (cards) **/
 /*! bloco */
-.contact-grid-layout section { /** Container do bloco*/
-    background-color: #edeeef;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    color: #39404d; 
+.contact-grid-layout section {
+  /** Container do bloco*/
+  background-color: #edeeef;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  color: #39404d;
 }
 
-.contact-grid-layout h2 { /** Título do bloco*/
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    color: #39404d;
+.contact-grid-layout h2 {
+  /** Título do bloco*/
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #39404d;
 }
 
 /** --- CONTACT INFO BLOCK (#contact-info-block) --- **/
-#contact-info-block { /** Container do bloco de informações de contato*/
-    grid-column: 1; 
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    width: 317px;
-    height: 401px;
+#contact-info-block {
+  /** Container do bloco de informações de contato*/
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  width: 317px;
+  height: 401px;
 }
 
-#contact-info-block ul { /** Lista de informações de contato*/
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 36px;
+#contact-info-block ul {
+  /** Lista de informações de contato*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 36px;
 }
 
-.icon-contactme-background { /** Container do ícone de contato*/
+.icon-contactme-background {
+  /** Container do ícone de contato*/
   background-color: #f3f4f6;
-  border-radius: 8px; 
-  padding: 8px; 
-  display: flex; 
-  justify-content: center; 
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 
   width: 35px;
-  height: 35px; 
-
+  height: 35px;
 }
 
-#contact-info-block .contactMe-item { /** Item da lista de informações de contato*/
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
+#contact-info-block .contactMe-item {
+  /** Item da lista de informações de contato*/
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
 }
 
-#contact-info-block .contactMe-item img { /** Imagem do ícone de contato*/
-    width: 15px;
-    height: 15px;
-    object-fit: contain;
+#contact-info-block .contactMe-item img {
+  /** Imagem do ícone de contato*/
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
 }
 
-#contact-info-block .contactMe-item h4 { /** Título do item da lista de informações de contato*/
-    margin: 0;
-    font-size: .9em;
-    font-weight: 400;
-    color: #39404d;
+#contact-info-block .contactMe-item h4 {
+  /** Título do item da lista de informações de contato*/
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #39404d;
 }
 
 /** TELEFONE, LOCALIZAÇÃO, HORÁRIO V **/
-#contact-info-block .contactMe-item p { /** Parágrafo do item da lista de informações de contato*/
-    margin: 6px 0 0;
-    font-size: 14px;
-    color: #555;
+#contact-info-block .contactMe-item p {
+  /** Parágrafo do item da lista de informações de contato*/
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #555;
 }
 
-#contact-info-block .contactMe-item .small-text { /** Texto menor do item da lista de informações de contato*/
-    font-size: 12px;
-    color: #555; /* Cor do texto menor */
-    margin-top: 2px;
+#contact-info-block .contactMe-item .small-text {
+  /** Texto menor do item da lista de informações de contato*/
+  font-size: 12px;
+  color: #555; /* Cor do texto menor */
+  margin-top: 2px;
 }
 
 /** TELEFONE, LOCALIZAÇÃO, HORÁRIO  ^**/
 
 /** --- PORQUE TRABALHAR COMIGO (#why-work-with-me) --- **/
-#why-work-with-me { /* Container do bloco de porquê trabalhar comigo*/
-    grid-column: 1;
-    grid-row: 2; 
-    padding: 25px;
-
+#why-work-with-me {
+  /* Container do bloco de porquê trabalhar comigo*/
+  grid-column: 1;
+  grid-row: 2;
+  padding: 25px;
 }
 
-#why-work-with-me ul { /** Lista de porquê trabalhar comigo*/
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#why-work-with-me ul {
+  /** Lista de porquê trabalhar comigo*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-#why-work-with-me ul li { /** Item da lista de porquê trabalhar comigo*/
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    color: #39404d;
+#why-work-with-me ul li {
+  /** Item da lista de porquê trabalhar comigo*/
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #39404d;
 }
 
-#why-work-with-me ul li img { /** Imagem do ícone do item da lista de porquê trabalhar comigo*/
-    width: 18px; 
-    height: 18px;
+#why-work-with-me ul li img {
+  /** Imagem do ícone do item da lista de porquê trabalhar comigo*/
+  width: 18px;
+  height: 18px;
 }
 
 /* * SEND MESSAGE FORM (#send-message-form) * */
-#send-message-form { /** Container do formulário de mensagem*/
-    grid-column: 2;
-    grid-row: 1 / span 2; 
+#send-message-form {
+  /** Container do formulário de mensagem*/
+  grid-column: 2;
+  grid-row: 1 / span 2;
 }
 #send-message-form h2 {
   margin-bottom: 40px;
 }
 
-#send-message-form form { /** Formulário de mensagem*/
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
+#send-message-form form {
+  /** Formulário de mensagem*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.form-group { /** Campos do formulário de mensagem*/
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 calc(50% - 10px); 
+.form-group {
+  /** Campos do formulário de mensagem*/
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(50% - 10px);
 }
 
-.form-group.full-width { /** Campos do formulário de mensagem*/
-    flex: 1 1 100%; 
+.form-group.full-width {
+  /** Campos do formulário de mensagem*/
+  flex: 1 1 100%;
 }
 
-.form-group label { /** Label do formulário de mensagem*/
-    font-size: 13px;
-    color: #39404d;
-    margin-bottom: 4px;
-    font-weight: 500;
+.form-group label {
+  /** Label do formulário de mensagem*/
+  font-size: 13px;
+  color: #39404d;
+  margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .form-group input, /** Input do formulário de mensagem*/
 .form-group textarea, /** Textarea do formulário de mensagem*/
-.form-group select { /** Select do formulário de mensagem*/
-    background-color: #ffff; 
-    border: 1px solid #4a4a4a52; 
-    border-radius: 8px;
-    padding: 6px 15px;
-    color: #39404d;
-    outline: none; 
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.form-group select {
+  /** Select do formulário de mensagem*/
+  background-color: #ffff;
+  border: 1px solid #4a4a4a52;
+  border-radius: 8px;
+  padding: 6px 15px;
+  color: #39404d;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
-    height: 30px;
+  height: 30px;
 }
 
-
-#priority option { /** Opção do select do formulário de mensagem*/
+#priority option {
+  /** Opção do select do formulário de mensagem*/
   color: #39404d;
-
 }
 
 .form-group input::placeholder, /** Placeholder do input do formulário de mensagem*/
-.form-group textarea::placeholder { /** Placeholder do textarea do formulário de mensagem*/
-    color: #0000006b; 
-    font-size: 12px;
+.form-group textarea::placeholder {
+  /** Placeholder do textarea do formulário de mensagem*/
+  color: #0000006b;
+  font-size: 12px;
 }
 
 .form-group input:focus, /** Input do formulário de mensagem*/
 .form-group textarea:focus, /** Textarea do formulário de mensagem*/
-.form-group select:focus { /** Select do formulário de mensagem*/
-    border-color: #1e2939; 
-    box-shadow: 0 0 0 3px #1e29391c;
+.form-group select:focus {
+  /** Select do formulário de mensagem*/
+  border-color: #1e2939;
+  box-shadow: 0 0 0 3px #1e29391c;
 }
 
-.form-group textarea { /** Textarea do formulário de mensagem*/
-    resize: vertical; 
-    min-height: 100px; 
+.form-group textarea {
+  /** Textarea do formulário de mensagem*/
+  resize: vertical;
+  min-height: 100px;
 }
 
-.form-group .char-count { /** Contador de caracteres do formulário de mensagem*/
-    font-size: 12px;
-    color: #39404d;
-    text-align: left;
-    margin-top: 5px;
+.form-group .char-count {
+  /** Contador de caracteres do formulário de mensagem*/
+  font-size: 12px;
+  color: #39404d;
+  text-align: left;
+  margin-top: 5px;
 }
 
-.send-message-button { /** Botão de enviar mensagem do formulário de mensagem*/
-    background-color: #1e2939; 
-    color: #fcfcfc;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 25px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 100%; 
-    margin-top: 10px; 
+/* * ESTILOS PARA MENSAGENS DE ERRO E SUCESSO * */
+.form-group .error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in;
 }
 
-.send-message-button img { /** Imagem do botão de enviar mensagem do formulário de mensagem*/
-    width: 15px;
-    height: 15px;
-    filter: invert(100%); 
+.form-group .success-message {
+  color: #22c55e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in;
 }
 
-.send-message-button:hover { /** Hover do botão de enviar mensagem do formulário de mensagem*/
-    background-color: #2d3d55;
-    transform: translateY(-2px);
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 3px #ff44441c;
+}
+
+.form-group input.success,
+.form-group textarea.success,
+.form-group select.success {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e1c;
+}
+
+/* Animação para aparecimento das mensagens de erro e sucesso */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.send-message-button {
+  /** Botão de enviar mensagem do formulário de mensagem*/
+  background-color: #1e2939;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.send-message-button img {
+  /** Imagem do botão de enviar mensagem do formulário de mensagem*/
+  width: 15px;
+  height: 15px;
+  filter: invert(100%);
+}
+
+.send-message-button:hover {
+  /** Hover do botão de enviar mensagem do formulário de mensagem*/
+  background-color: #2d3d55;
+  transform: translateY(-2px);
 }
 
 /* * ALTERNATIVE CONTACT SECTION (#alternative-contact) * */
-#alternative-contact { /** Container do bloco de contato alternativo*/
-    grid-column: 1 / span 2;
-    grid-row: 4; 
-    text-align: center;
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    width: 588px;
-    height: 209px;
+#alternative-contact {
+  /** Container do bloco de contato alternativo*/
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 588px;
+  height: 209px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#alternative-contact h2 { /** Título do bloco de contato alternativo*/
+#alternative-contact h2 {
+  /** Título do bloco de contato alternativo*/
   font-size: 17px;
   margin-bottom: 20px;
 }
 
-#alternative-contact p { /** Parágrafo do bloco de contato alternativo*/
-    font-size: 14px;
-    color: #39404d;
-    margin-bottom: 25px;
-    line-height: 1.6;
+#alternative-contact p {
+  /** Parágrafo do bloco de contato alternativo*/
+  font-size: 14px;
+  color: #39404d;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
-.social-links { /** Links sociais do bloco de contato alternativo*/
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.social-links {
+  /** Links sociais do bloco de contato alternativo*/
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.social-button { /** Botão social do bloco de contato alternativo*/
-    background-color: #ffffff;
-    border: 1px solid #4a4a4a5b;
-    color: #39404d;
-    padding: 10px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+.social-button {
+  /** Botão social do bloco de contato alternativo*/
+  background-color: #ffffff;
+  border: 1px solid #4a4a4a5b;
+  color: #39404d;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
-.social-button:hover { /** Hover do botão social do bloco de contato alternativo    */
-    background-color: #edeeef;
+.social-button:hover {
+  /** Hover do botão social do bloco de contato alternativo    */
+  background-color: #edeeef;
 }
-
-

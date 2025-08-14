@@ -1,5 +1,144 @@
 // * SCRIPT PRINCIPAL - SITE SPA*
 // * Gerencia a navegação entre páginas sem recarregar o site
+
+// * FUNÇÕES DE VALIDAÇÃO *
+// Validação de e-mail usando regex mais robusta
+function validateEmail(email) {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+}
+
+// Validação de telefone brasileiro (aceita vários formatos)
+function validatePhone(phone) {
+  // Remove todos os caracteres não numéricos
+  const cleanPhone = phone.replace(/\D/g, "");
+
+  // Verifica se tem entre 10 e 11 dígitos (com ou sem DDD)
+  if (cleanPhone.length < 10 || cleanPhone.length > 11) {
+    return false;
+  }
+
+  // Verifica se é um DDD válido (11 a 99)
+  const ddd = cleanPhone.substring(0, 2);
+  if (parseInt(ddd) < 11 || parseInt(ddd) > 99) {
+    return false;
+  }
+
+  // Verifica se é celular (9 no segundo dígito quando tem 11 dígitos)
+  if (cleanPhone.length === 11 && cleanPhone.charAt(2) !== "9") {
+    return false;
+  }
+
+  return true;
+}
+
+// Função para formatar telefone automaticamente
+function formatPhone(input) {
+  let value = input.value.replace(/\D/g, "");
+
+  if (value.length <= 2) {
+    input.value = value;
+  } else if (value.length <= 6) {
+    input.value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+  } else if (value.length <= 10) {
+    input.value = `(${value.substring(0, 2)}) ${value.substring(
+      2,
+      6
+    )}-${value.substring(6)}`;
+  } else if (value.length <= 11) {
+    input.value = `(${value.substring(0, 2)}) ${value.substring(
+      2,
+      7
+    )}-${value.substring(7)}`;
+  }
+}
+
+// Função para mostrar mensagem de erro
+function showError(input, message) {
+  const formGroup = input.closest(".form-group");
+  const existingError = formGroup.querySelector(".error-message");
+
+  if (existingError) {
+    existingError.remove();
+  }
+
+  const errorDiv = document.createElement("div");
+  errorDiv.className = "error-message";
+  errorDiv.textContent = message;
+  errorDiv.style.color = "#ff4444";
+  errorDiv.style.fontSize = "0.875rem";
+  errorDiv.style.marginTop = "0.25rem";
+
+  formGroup.appendChild(errorDiv);
+  input.style.borderColor = "#ff4444";
+}
+
+// Função para remover mensagem de erro
+function removeError(input) {
+  const formGroup = input.closest(".form-group");
+  const existingError = formGroup.querySelector(".error-message");
+
+  if (existingError) {
+    existingError.remove();
+  }
+
+  input.style.borderColor = "";
+  input.classList.remove("error");
+}
+
+// Função para mostrar feedback positivo
+function showSuccess(input) {
+  const formGroup = input.closest(".form-group");
+  const existingSuccess = formGroup.querySelector(".success-message");
+
+  if (existingSuccess) {
+    existingSuccess.remove();
+  }
+
+  const successDiv = document.createElement("div");
+  successDiv.className = "success-message";
+  successDiv.textContent = "✓ Válido";
+  successDiv.style.color = "#22c55e";
+  successDiv.style.fontSize = "0.875rem";
+  successDiv.style.marginTop = "0.25rem";
+
+  formGroup.appendChild(successDiv);
+  input.style.borderColor = "#22c55e";
+  input.classList.add("success");
+}
+
+// Função para validar o formulário completo
+function validateForm(form) {
+  let isValid = true;
+
+  // Validação do e-mail
+  const emailInput = form.querySelector("#email");
+  if (emailInput && emailInput.value.trim()) {
+    if (!validateEmail(emailInput.value.trim())) {
+      showError(emailInput, "Por favor, insira um e-mail válido");
+      isValid = false;
+    } else {
+      removeError(emailInput);
+    }
+  }
+
+  // Validação do telefone (se preenchido)
+  const phoneInput = form.querySelector("#phone");
+  if (phoneInput && phoneInput.value.trim()) {
+    if (!validatePhone(phoneInput.value.trim())) {
+      showError(
+        phoneInput,
+        "Por favor, insira um telefone válido (formato: (99) 99999-9999)"
+      );
+      isValid = false;
+    } else {
+      removeError(phoneInput);
+    }
+  }
+
+  return isValid;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // * ELEMENTOS DO DOM *
   const pageContentLoader = document.getElementById("dynamic-page"); //* Aonde o conteúdo das páginas será carregado
@@ -91,12 +230,77 @@ document.addEventListener("DOMContentLoaded", () => {
           const newForm = form.cloneNode(true);
           form.replaceWith(newForm);
 
-          // Adiciona listener para o evento de submissão
+          // * CONFIGURAÇÃO DAS VALIDAÇÕES EM TEMPO REAL *
+          const emailInput = newForm.querySelector("#email");
+          const phoneInput = newForm.querySelector("#phone");
+
+          // Validação em tempo real para e-mail
+          if (emailInput) {
+            emailInput.addEventListener("blur", function () {
+              if (this.value.trim()) {
+                if (!validateEmail(this.value.trim())) {
+                  showError(this, "Por favor, insira um e-mail válido");
+                } else {
+                  removeError(this);
+                  showSuccess(this);
+                }
+              } else {
+                removeError(this);
+              }
+            });
+
+            emailInput.addEventListener("input", function () {
+              if (this.value.trim() && validateEmail(this.value.trim())) {
+                removeError(this);
+                showSuccess(this);
+              }
+            });
+          }
+
+          // Validação em tempo real para telefone
+          if (phoneInput) {
+            // Formatação automática do telefone
+            phoneInput.addEventListener("input", function () {
+              formatPhone(this);
+
+              // Remove erro e mostra sucesso se o telefone for válido
+              if (this.value.trim() && validatePhone(this.value.trim())) {
+                removeError(this);
+                showSuccess(this);
+              }
+            });
+
+            phoneInput.addEventListener("blur", function () {
+              if (this.value.trim()) {
+                if (!validatePhone(this.value.trim())) {
+                  showError(
+                    this,
+                    "Por favor, insira um telefone válido (formato: (99) 99999-9999)"
+                  );
+                } else {
+                  removeError(this);
+                  showSuccess(this);
+                }
+              } else {
+                removeError(this);
+              }
+            });
+          }
+
+          // Adiciona listener para o evento de submissão com validação
           newForm.addEventListener("submit", function (event) {
             event.preventDefault();
-            alert(
-              "O envio do formulário ainda está sendo implementado. Por favor, entre em contato por outros meios."
-            );
+
+            // Valida o formulário antes de permitir o envio
+            if (validateForm(this)) {
+              alert(
+                "O envio do formulário ainda está sendo implementado. Por favor, entre em contato por outros meios."
+              );
+            } else {
+              alert(
+                "Por favor, corrija os erros no formulário antes de enviar."
+              );
+            }
           });
 
           // * CONFIGURAÇÃO DO CONTADOR DE CARACTERES * (NOVO)
@@ -163,5 +367,3 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPage("home");
   }
 });
-
-
